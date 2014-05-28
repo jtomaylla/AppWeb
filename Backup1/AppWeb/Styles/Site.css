@@ -1,0 +1,420 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body   
+{
+    background: #b6b7bc;
+    font-size: .80em;
+    font-family: "Arial, Helvetica Neue", "Lucida Grande", "Segoe UI", Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 100%;
+    background-color: #fff;
+    margin: 0px auto 0px auto;
+    border: 1px solid #496077;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #4b6c9e;
+    width: 100%; 
+    height:80px;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main
+{
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 550px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color:#a3c2df;
+    width:100%;
+}
+
+div.menu
+{
+    padding: 4px 0px 0px 8px;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #465c71;
+    border: 1px #4e667d solid;
+    color: #dde4ec;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 500px;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+.gridview{ 
+    /*width: 100%; */
+    background-color: #f2f2f5; 
+    margin: 5px 0 10px 0; 
+    border: solid 1px #c1c1c1; 
+    border-collapse:collapse; 
+}
+.gridview td 
+{ 
+    padding: 2px; 
+    border: solid 1px #c1c1c1; 
+    color: #000000; 
+}
+.gridview th 
+{ 
+	background:transparent url(/Images/thbackground.gif) repeat;
+    height:19px;
+    border:solid 1px #99BBE8;
+    font-weight:normal;
+
+}
+.gridview .gridview_alter  
+{
+    background: #E7E7E7; 
+}
+.gridview .gridview_pager  
+{
+	font-size:x-small;
+	text-align:right;
+    background-position: bottom left;
+    background: #D0DEF0 url(/Images/toolbarbck.gif) repeat-x scroll left top;
+    
+}
+.gridview .gridview_pager table  
+{
+    margin: 5px 0; 
+}
+
+.gridview .gridview_pager td 
+{ 
+    border-width: 0; 
+    padding: 0 6px; 
+    border-left: solid 1px #666; 
+    font-weight: bold; 
+    color: #fff; 
+    line-height: 12px; 
+ }   
+.gridview .gridview_pager a  
+{
+    color: #666; 
+    text-decoration: none; 
+}
+.gridview .gridview_pager a:hover  
+{
+    color: #000; 
+    text-decoration: none; 
+}
+
+.cssButton {
+	font-family:Tahoma,Arial,Helvetica,Geneva,sans-serif;
+	border-top:1px solid #a5a9b6;
+	border-left:1px solid #a5a9b6; 
+	border-bottom:1px solid #7b8194;
+	border-right:1px solid #7b8194;
+	background-repeat:repeat-x;
+	background-position:top left;
+	background-color:#c9e5ec;
+	margin:1px;
+	color:#586073;
+	text-align:center;
+	font-weight:bold;
+	cursor:pointer;
+	padding-left:8px;
+	padding-right:8px;
+	overflow:visible;
+	width:1;
+	background-image:url(/Images/btn-bg1.gif)
+	
+}
+
+
+.cssTituloPagina {
+	BORDER-BOTTOM: #3a5a87 1px solid; 
+	FONT-FAMILY: Arial; 
+	MARGIN-BOTTOM: 10px; 
+	COLOR: #3a5a87; 
+	VERTICAL-ALIGN: middle; 
+	FONT-WEIGHT: bold
+}
+
+.cssTablaRegistro 
+{
+	background-color:#eaeff5;
+	padding-left:8px;
+	padding-right:8px;
+    padding-top:8px;
+    padding-bottom:8px;
+}
+
+.cssTablaCabeceraRegistro
+{
+	background-color:#84b2de;
+	background-image:url('/Images/headingBarBg.gif');
+    color: #000000;
+    padding-left:8px;    	
+}
+
+.cssMensaje
+{
+    font-size: 10pt;
+    color: Red;
+}
+
+.cssObligatorio
+{
+    font-size: 1.2em;
+}
+
+.cssError
+{
+    font-size: 10pt;
+    color: Red;
+}

@@ -1,0 +1,90 @@
+D:\rbtec\SIL\fuentes\AppWeb\AppDAL\bin\Release\AppDAL.dll
+D:\rbtec\SIL\fuentes\AppWeb\AppDAL\bin\Release\AppDAL.pdb
+D:\rbtec\SIL\fuentes\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\rbtec\SIL\fuentes\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\rbtec\SIL\fuentes\AppWeb\AppDAL\bin\Release\Microsoft.Practices.ServiceLocation.dll
+D:\rbtec\SIL\fuentes\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.dll
+D:\rbtec\SIL\fuentes\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.Interception.dll
+D:\rbtec\SIL\fuentes\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+D:\rbtec\SIL\fuentes\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\rbtec\SIL\fuentes\AppWeb\AppDAL\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+D:\rbtec\SIL\fuentes\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.pdb
+D:\rbtec\SIL\fuentes\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.Interception.pdb
+D:\rbtec\SIL\fuentes\AppWeb\AppDAL\obj\Release\ResolveAssemblyReference.cache
+D:\rbtec\SIL\fuentes\AppWeb\AppDAL\obj\Release\AppDAL.dll
+D:\rbtec\SIL\fuentes\AppWeb\AppDAL\obj\Release\AppDAL.pdb
+D:\Documentos\Proyectos\RBTEC\Socios en Salud\Sistema de logistica\fuente\AppWeb\AppDAL\bin\Release\AppDAL.dll
+D:\Documentos\Proyectos\RBTEC\Socios en Salud\Sistema de logistica\fuente\AppWeb\AppDAL\bin\Release\AppDAL.pdb
+D:\Documentos\Proyectos\RBTEC\Socios en Salud\Sistema de logistica\fuente\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Documentos\Proyectos\RBTEC\Socios en Salud\Sistema de logistica\fuente\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Documentos\Proyectos\RBTEC\Socios en Salud\Sistema de logistica\fuente\AppWeb\AppDAL\bin\Release\Microsoft.Practices.ServiceLocation.dll
+D:\Documentos\Proyectos\RBTEC\Socios en Salud\Sistema de logistica\fuente\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.dll
+D:\Documentos\Proyectos\RBTEC\Socios en Salud\Sistema de logistica\fuente\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.Interception.dll
+D:\Documentos\Proyectos\RBTEC\Socios en Salud\Sistema de logistica\fuente\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+D:\Documentos\Proyectos\RBTEC\Socios en Salud\Sistema de logistica\fuente\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Documentos\Proyectos\RBTEC\Socios en Salud\Sistema de logistica\fuente\AppWeb\AppDAL\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+D:\Documentos\Proyectos\RBTEC\Socios en Salud\Sistema de logistica\fuente\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.pdb
+D:\Documentos\Proyectos\RBTEC\Socios en Salud\Sistema de logistica\fuente\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.Interception.pdb
+D:\Documentos\Proyectos\RBTEC\Socios en Salud\Sistema de logistica\fuente\AppWeb\AppDAL\obj\Release\AppDAL.csprojResolveAssemblyReference.cache
+D:\Documentos\Proyectos\RBTEC\Socios en Salud\Sistema de logistica\fuente\AppWeb\AppDAL\obj\Release\AppDAL.dll
+D:\Documentos\Proyectos\RBTEC\Socios en Salud\Sistema de logistica\fuente\AppWeb\AppDAL\obj\Release\AppDAL.pdb
+C:\Users\BOCANEGRA\Desktop\AppWeb\AppDAL\bin\Release\AppDAL.dll
+C:\Users\BOCANEGRA\Desktop\AppWeb\AppDAL\bin\Release\AppDAL.pdb
+C:\Users\BOCANEGRA\Desktop\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\BOCANEGRA\Desktop\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\BOCANEGRA\Desktop\AppWeb\AppDAL\bin\Release\Microsoft.Practices.ServiceLocation.dll
+C:\Users\BOCANEGRA\Desktop\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.dll
+C:\Users\BOCANEGRA\Desktop\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.Interception.dll
+C:\Users\BOCANEGRA\Desktop\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+C:\Users\BOCANEGRA\Desktop\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\BOCANEGRA\Desktop\AppWeb\AppDAL\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\BOCANEGRA\Desktop\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.pdb
+C:\Users\BOCANEGRA\Desktop\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.Interception.pdb
+C:\Users\BOCANEGRA\Desktop\AppWeb\AppDAL\obj\Release\ResolveAssemblyReference.cache
+C:\Users\BOCANEGRA\Desktop\AppWeb\AppDAL\obj\Release\AppDAL.dll
+C:\Users\BOCANEGRA\Desktop\AppWeb\AppDAL\obj\Release\AppDAL.pdb
+C:\Users\BOCANEGRA\Documents\AppWeb\AppDAL\bin\Release\AppDAL.dll
+C:\Users\BOCANEGRA\Documents\AppWeb\AppDAL\bin\Release\AppDAL.pdb
+C:\Users\BOCANEGRA\Documents\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\BOCANEGRA\Documents\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\BOCANEGRA\Documents\AppWeb\AppDAL\bin\Release\Microsoft.Practices.ServiceLocation.dll
+C:\Users\BOCANEGRA\Documents\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.dll
+C:\Users\BOCANEGRA\Documents\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.Interception.dll
+C:\Users\BOCANEGRA\Documents\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+C:\Users\BOCANEGRA\Documents\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\BOCANEGRA\Documents\AppWeb\AppDAL\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\BOCANEGRA\Documents\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.pdb
+C:\Users\BOCANEGRA\Documents\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.Interception.pdb
+C:\Users\BOCANEGRA\Documents\AppWeb\AppDAL\obj\Release\ResolveAssemblyReference.cache
+C:\Users\BOCANEGRA\Documents\AppWeb\AppDAL\obj\Release\AppDAL.dll
+C:\Users\BOCANEGRA\Documents\AppWeb\AppDAL\obj\Release\AppDAL.pdb
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppDAL\bin\Release\AppDAL.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppDAL\bin\Release\AppDAL.pdb
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppDAL\bin\Release\Microsoft.Practices.ServiceLocation.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.Interception.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppDAL\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.pdb
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.Interception.pdb
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppDAL\obj\Release\ResolveAssemblyReference.cache
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppDAL\obj\Release\AppDAL.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppDAL\obj\Release\AppDAL.pdb
+C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Release\AppDAL.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Release\AppDAL.pdb
+C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Release\Microsoft.Practices.ServiceLocation.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.Interception.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.pdb
+C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Release\Microsoft.Practices.Unity.Interception.pdb
+C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\obj\Release\AppDAL.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\obj\Release\AppDAL.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\obj\Release\AppDAL.pdb

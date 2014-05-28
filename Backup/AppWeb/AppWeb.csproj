@@ -1,0 +1,789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D9C83767-D68A-44EE-92FF-73C12CD397FB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AppWeb</RootNamespace>
+    <AssemblyName>AppWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.1005, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Images\logorbtec.jpg" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="frmCotizacion.aspx" />
+    <Content Include="frmCotizacionEnProceso.aspx" />
+    <Content Include="frmCotizacionLinea.aspx" />
+    <Content Include="frmCotizacionLista.aspx" />
+    <Content Include="frmCotizacionSolicitud.aspx" />
+    <Content Include="frmDespachoPedidoInterno.aspx" />
+    <Content Include="frmDespachoPedidoInternoLista.aspx" />
+    <Content Include="frmDespachoPedidoLista.aspx" />
+    <Content Include="frmDespachoRecepcion.aspx" />
+    <Content Include="frmDespachoRecepcionLista.aspx" />
+    <Content Include="frmGuiaRemision.aspx" />
+    <Content Include="frmGuiaRemisionPendiente.aspx" />
+    <Content Include="frmGuiaRemisionPendienteLista.aspx" />
+    <Content Include="frmIGV.aspx" />
+    <Content Include="frmInventarioArticulo.aspx" />
+    <Content Include="frmMantArticulo.aspx" />
+    <Content Include="frmMantClase.aspx" />
+    <Content Include="frmMantFamilia.aspx" />
+    <Content Include="frmMantProveedor.aspx" />
+    <Content Include="frmMantSede.aspx" />
+    <Content Include="frmMantUnidadMedida.aspx" />
+    <Content Include="frmMovimientoInventario.aspx" />
+    <Content Include="frmNivelAprobacion.aspx" />
+    <Content Include="frmOrdenCompra.aspx" />
+    <Content Include="frmOrdenCompraAprobacion.aspx" />
+    <Content Include="frmOrdenCompraAprobacionLista.aspx" />
+    <Content Include="frmOrdenCompraAprobacionLogistica.aspx" />
+    <Content Include="frmOrdenCompraEnvioProveedor.aspx" />
+    <Content Include="frmOrdenCompraImpresion.aspx" />
+    <Content Include="frmOrdenCompraLineaAprobacionLogistica.aspx" />
+    <Content Include="frmOrdenCompraLineaEnvioProveedor.aspx" />
+    <Content Include="frmOrdenCompraLista.aspx" />
+    <Content Include="frmOrdenCompraServicio.aspx" />
+    <Content Include="frmParametro.aspx" />
+    <Content Include="frmPatrimonio.aspx" />
+    <Content Include="frmPedido.aspx" />
+    <Content Include="frmPedidoAprobacionLogistica.aspx" />
+    <Content Include="frmPedidoAprobacionResponsable.aspx" />
+    <Content Include="frmPedidoCodigoPresupuesto.aspx" />
+    <Content Include="frmPedidoConsulta.aspx" />
+    <Content Include="frmPedidoInterno.aspx" />
+    <Content Include="frmPedidoLineaAprobacionLogistica.aspx" />
+    <Content Include="frmPedidoLineaAprobacionResponsable.aspx" />
+    <Content Include="frmPedidoLista.aspx" />
+    <Content Include="frmPedidoPorCotizarLista.aspx" />
+    <Content Include="frmPreArticulo.aspx" />
+    <Content Include="frmPreArticuloSolicitud.aspx" />
+    <Content Include="frmProyecto.aspx" />
+    <Content Include="frmRecepcion.aspx" />
+    <Content Include="frmRecepcionInventario.aspx" />
+    <Content Include="frmRecepcionInventarioTransaccion.aspx" />
+    <Content Include="frmRecepcionServicio.aspx" />
+    <Content Include="frmReportePedidos.aspx" />
+    <Content Include="frmVisorReporte.aspx" />
+    <Content Include="Images\btn-bg1.gif" />
+    <Content Include="Images\close.gif" />
+    <Content Include="Images\del.gif" />
+    <Content Include="Images\drop1.gif" />
+    <Content Include="Images\drop2.gif" />
+    <Content Include="Images\firma.jpg" />
+    <Content Include="Images\GrillaEliminar.gif" />
+    <Content Include="Images\Grilla.Flecha.gif" />
+    <Content Include="Images\left1.gif" />
+    <Content Include="Images\left2.gif" />
+    <Content Include="Images\logorbtec.jpg" />
+    <Content Include="Images\right1.gif" />
+    <Content Include="Images\right2.gif" />
+    <Content Include="Images\thbackground.gif" />
+    <Content Include="Images\toolbarbck.gif" />
+    <Content Include="Images\_GrillaEliminar.gif" />
+    <Content Include="Images\headerBg.jpg" />
+    <Content Include="Images\headingBarBg.gif" />
+    <Content Include="Images\key.png" />
+    <Content Include="Images\lightBlue_back.jpg" />
+    <Content Include="KardexArticulo.aspx" />
+    <Content Include="OrdenCompra.aspx" />
+    <Content Include="ReportePedido.aspx" />
+    <Content Include="Scripts\popcalendar.js" />
+    <Content Include="Scripts\rbtec.js" />
+    <Content Include="Seguridad\frmFuncionLista.aspx" />
+    <Content Include="Seguridad\frmPerfilLista.aspx" />
+    <Content Include="Seguridad\frmUsuarioCambioClave.aspx" />
+    <Content Include="Seguridad\frmUsuarioLista.aspx" />
+    <Content Include="Seguridad\Scripts\rbtec.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppConfig.cs" />
+    <Compile Include="AppConstantes.cs" />
+    <Compile Include="AppUtilidad.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCotizacion.aspx.cs">
+      <DependentUpon>frmCotizacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCotizacion.aspx.designer.cs">
+      <DependentUpon>frmCotizacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCotizacionEnProceso.aspx.cs">
+      <DependentUpon>frmCotizacionEnProceso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCotizacionEnProceso.aspx.designer.cs">
+      <DependentUpon>frmCotizacionEnProceso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCotizacionLinea.aspx.cs">
+      <DependentUpon>frmCotizacionLinea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCotizacionLinea.aspx.designer.cs">
+      <DependentUpon>frmCotizacionLinea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCotizacionLista.aspx.cs">
+      <DependentUpon>frmCotizacionLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCotizacionLista.aspx.designer.cs">
+      <DependentUpon>frmCotizacionLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCotizacionSolicitud.aspx.cs">
+      <DependentUpon>frmCotizacionSolicitud.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCotizacionSolicitud.aspx.designer.cs">
+      <DependentUpon>frmCotizacionSolicitud.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDespachoPedidoInterno.aspx.cs">
+      <DependentUpon>frmDespachoPedidoInterno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDespachoPedidoInterno.aspx.designer.cs">
+      <DependentUpon>frmDespachoPedidoInterno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDespachoPedidoInternoLista.aspx.cs">
+      <DependentUpon>frmDespachoPedidoInternoLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDespachoPedidoInternoLista.aspx.designer.cs">
+      <DependentUpon>frmDespachoPedidoInternoLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDespachoPedidoLista.aspx.cs">
+      <DependentUpon>frmDespachoPedidoLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDespachoPedidoLista.aspx.designer.cs">
+      <DependentUpon>frmDespachoPedidoLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDespachoRecepcion.aspx.cs">
+      <DependentUpon>frmDespachoRecepcion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDespachoRecepcion.aspx.designer.cs">
+      <DependentUpon>frmDespachoRecepcion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDespachoRecepcionLista.aspx.cs">
+      <DependentUpon>frmDespachoRecepcionLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDespachoRecepcionLista.aspx.designer.cs">
+      <DependentUpon>frmDespachoRecepcionLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmGuiaRemision.aspx.cs">
+      <DependentUpon>frmGuiaRemision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmGuiaRemision.aspx.designer.cs">
+      <DependentUpon>frmGuiaRemision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmGuiaRemisionPendiente.aspx.cs">
+      <DependentUpon>frmGuiaRemisionPendiente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmGuiaRemisionPendiente.aspx.designer.cs">
+      <DependentUpon>frmGuiaRemisionPendiente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmGuiaRemisionPendienteLista.aspx.cs">
+      <DependentUpon>frmGuiaRemisionPendienteLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmGuiaRemisionPendienteLista.aspx.designer.cs">
+      <DependentUpon>frmGuiaRemisionPendienteLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmIGV.aspx.cs">
+      <DependentUpon>frmIGV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmIGV.aspx.designer.cs">
+      <DependentUpon>frmIGV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventarioArticulo.aspx.cs">
+      <DependentUpon>frmInventarioArticulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmInventarioArticulo.aspx.designer.cs">
+      <DependentUpon>frmInventarioArticulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantArticulo.aspx.cs">
+      <DependentUpon>frmMantArticulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMantArticulo.aspx.designer.cs">
+      <DependentUpon>frmMantArticulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantClase.aspx.cs">
+      <DependentUpon>frmMantClase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMantClase.aspx.designer.cs">
+      <DependentUpon>frmMantClase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantFamilia.aspx.cs">
+      <DependentUpon>frmMantFamilia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMantFamilia.aspx.designer.cs">
+      <DependentUpon>frmMantFamilia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantProveedor.aspx.cs">
+      <DependentUpon>frmMantProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMantProveedor.aspx.designer.cs">
+      <DependentUpon>frmMantProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantSede.aspx.cs">
+      <DependentUpon>frmMantSede.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMantSede.aspx.designer.cs">
+      <DependentUpon>frmMantSede.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantUnidadMedida.aspx.cs">
+      <DependentUpon>frmMantUnidadMedida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMantUnidadMedida.aspx.designer.cs">
+      <DependentUpon>frmMantUnidadMedida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimientoInventario.aspx.cs">
+      <DependentUpon>frmMovimientoInventario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMovimientoInventario.aspx.designer.cs">
+      <DependentUpon>frmMovimientoInventario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmNivelAprobacion.aspx.cs">
+      <DependentUpon>frmNivelAprobacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmNivelAprobacion.aspx.designer.cs">
+      <DependentUpon>frmNivelAprobacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenCompra.aspx.cs">
+      <DependentUpon>frmOrdenCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrdenCompra.aspx.designer.cs">
+      <DependentUpon>frmOrdenCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenCompraAprobacion.aspx.cs">
+      <DependentUpon>frmOrdenCompraAprobacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrdenCompraAprobacion.aspx.designer.cs">
+      <DependentUpon>frmOrdenCompraAprobacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenCompraAprobacionLista.aspx.cs">
+      <DependentUpon>frmOrdenCompraAprobacionLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrdenCompraAprobacionLista.aspx.designer.cs">
+      <DependentUpon>frmOrdenCompraAprobacionLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenCompraAprobacionLogistica.aspx.cs">
+      <DependentUpon>frmOrdenCompraAprobacionLogistica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrdenCompraAprobacionLogistica.aspx.designer.cs">
+      <DependentUpon>frmOrdenCompraAprobacionLogistica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenCompraEnvioProveedor.aspx.cs">
+      <DependentUpon>frmOrdenCompraEnvioProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrdenCompraEnvioProveedor.aspx.designer.cs">
+      <DependentUpon>frmOrdenCompraEnvioProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenCompraImpresion.aspx.cs">
+      <DependentUpon>frmOrdenCompraImpresion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrdenCompraImpresion.aspx.designer.cs">
+      <DependentUpon>frmOrdenCompraImpresion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenCompraLineaAprobacionLogistica.aspx.cs">
+      <DependentUpon>frmOrdenCompraLineaAprobacionLogistica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrdenCompraLineaAprobacionLogistica.aspx.designer.cs">
+      <DependentUpon>frmOrdenCompraLineaAprobacionLogistica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenCompraLineaEnvioProveedor.aspx.cs">
+      <DependentUpon>frmOrdenCompraLineaEnvioProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrdenCompraLineaEnvioProveedor.aspx.designer.cs">
+      <DependentUpon>frmOrdenCompraLineaEnvioProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenCompraLista.aspx.cs">
+      <DependentUpon>frmOrdenCompraLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrdenCompraLista.aspx.designer.cs">
+      <DependentUpon>frmOrdenCompraLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenCompraServicio.aspx.cs">
+      <DependentUpon>frmOrdenCompraServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrdenCompraServicio.aspx.designer.cs">
+      <DependentUpon>frmOrdenCompraServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmParametro.aspx.cs">
+      <DependentUpon>frmParametro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmParametro.aspx.designer.cs">
+      <DependentUpon>frmParametro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatrimonio.aspx.cs">
+      <DependentUpon>frmPatrimonio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPatrimonio.aspx.designer.cs">
+      <DependentUpon>frmPatrimonio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedido.aspx.cs">
+      <DependentUpon>frmPedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPedido.aspx.designer.cs">
+      <DependentUpon>frmPedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedidoAprobacionLogistica.aspx.cs">
+      <DependentUpon>frmPedidoAprobacionLogistica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPedidoAprobacionLogistica.aspx.designer.cs">
+      <DependentUpon>frmPedidoAprobacionLogistica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedidoAprobacionResponsable.aspx.cs">
+      <DependentUpon>frmPedidoAprobacionResponsable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPedidoAprobacionResponsable.aspx.designer.cs">
+      <DependentUpon>frmPedidoAprobacionResponsable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedidoCodigoPresupuesto.aspx.cs">
+      <DependentUpon>frmPedidoCodigoPresupuesto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPedidoCodigoPresupuesto.aspx.designer.cs">
+      <DependentUpon>frmPedidoCodigoPresupuesto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedidoConsulta.aspx.cs">
+      <DependentUpon>frmPedidoConsulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPedidoConsulta.aspx.designer.cs">
+      <DependentUpon>frmPedidoConsulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedidoInterno.aspx.cs">
+      <DependentUpon>frmPedidoInterno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPedidoInterno.aspx.designer.cs">
+      <DependentUpon>frmPedidoInterno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedidoLineaAprobacionLogistica.aspx.cs">
+      <DependentUpon>frmPedidoLineaAprobacionLogistica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPedidoLineaAprobacionLogistica.aspx.designer.cs">
+      <DependentUpon>frmPedidoLineaAprobacionLogistica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedidoLineaAprobacionResponsable.aspx.cs">
+      <DependentUpon>frmPedidoLineaAprobacionResponsable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPedidoLineaAprobacionResponsable.aspx.designer.cs">
+      <DependentUpon>frmPedidoLineaAprobacionResponsable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedidoLista.aspx.cs">
+      <DependentUpon>frmPedidoLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPedidoLista.aspx.designer.cs">
+      <DependentUpon>frmPedidoLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedidoPorCotizarLista.aspx.cs">
+      <DependentUpon>frmPedidoPorCotizarLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPedidoPorCotizarLista.aspx.designer.cs">
+      <DependentUpon>frmPedidoPorCotizarLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPreArticulo.aspx.cs">
+      <DependentUpon>frmPreArticulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPreArticulo.aspx.designer.cs">
+      <DependentUpon>frmPreArticulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPreArticuloSolicitud.aspx.cs">
+      <DependentUpon>frmPreArticuloSolicitud.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPreArticuloSolicitud.aspx.designer.cs">
+      <DependentUpon>frmPreArticuloSolicitud.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmProyecto.aspx.cs">
+      <DependentUpon>frmProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmProyecto.aspx.designer.cs">
+      <DependentUpon>frmProyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecepcion.aspx.cs">
+      <DependentUpon>frmRecepcion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmRecepcion.aspx.designer.cs">
+      <DependentUpon>frmRecepcion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecepcionInventario.aspx.cs">
+      <DependentUpon>frmRecepcionInventario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmRecepcionInventario.aspx.designer.cs">
+      <DependentUpon>frmRecepcionInventario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecepcionInventarioTransaccion.aspx.cs">
+      <DependentUpon>frmRecepcionInventarioTransaccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmRecepcionInventarioTransaccion.aspx.designer.cs">
+      <DependentUpon>frmRecepcionInventarioTransaccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecepcionServicio.aspx.cs">
+      <DependentUpon>frmRecepcionServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmRecepcionServicio.aspx.designer.cs">
+      <DependentUpon>frmRecepcionServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportePedidos.aspx.cs">
+      <DependentUpon>frmReportePedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmReportePedidos.aspx.designer.cs">
+      <DependentUpon>frmReportePedidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisorReporte.aspx.cs">
+      <DependentUpon>frmVisorReporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVisorReporte.aspx.designer.cs">
+      <DependentUpon>frmVisorReporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="KardexArticulo.aspx.cs">
+      <DependentUpon>KardexArticulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KardexArticulo.aspx.designer.cs">
+      <DependentUpon>KardexArticulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KardexArticulo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KardexArticulo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrdenCompra.aspx.cs">
+      <DependentUpon>OrdenCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdenCompra.aspx.designer.cs">
+      <DependentUpon>OrdenCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportePedido.aspx.cs">
+      <DependentUpon>ReportePedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportePedido.aspx.designer.cs">
+      <DependentUpon>ReportePedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\dsReportes.cs">
+      <DependentUpon>dsReportes.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte\dsReportes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReportes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rptGuiaRemision.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiaRemision.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptOrdenCompra.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptOrdenCompra.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptParametro.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptParametro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPedido.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPedido.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Seguridad\frmFuncionLista.aspx.cs">
+      <DependentUpon>frmFuncionLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seguridad\frmFuncionLista.aspx.designer.cs">
+      <DependentUpon>frmFuncionLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\frmPerfilLista.aspx.cs">
+      <DependentUpon>frmPerfilLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seguridad\frmPerfilLista.aspx.designer.cs">
+      <DependentUpon>frmPerfilLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\frmUsuarioCambioClave.aspx.cs">
+      <DependentUpon>frmUsuarioCambioClave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seguridad\frmUsuarioCambioClave.aspx.designer.cs">
+      <DependentUpon>frmUsuarioCambioClave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\frmUsuarioLista.aspx.cs">
+      <DependentUpon>frmUsuarioLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seguridad\frmUsuarioLista.aspx.designer.cs">
+      <DependentUpon>frmUsuarioLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppDAL\AppDAL.csproj">
+      <Project>{98FE53C6-2E0C-45EB-AEA5-282D6BAED614}</Project>
+      <Name>AppDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reporte\dsReportes.xsc">
+      <DependentUpon>dsReportes.xsd</DependentUpon>
+    </None>
+    <None Include="Reporte\dsReportes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReportes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reporte\dsReportes.xss">
+      <DependentUpon>dsReportes.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="KardexArticulo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>KardexArticulo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptGuiaRemision.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiaRemision.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptOrdenCompra.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptOrdenCompra.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptParametro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptParametro.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPedido.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPedido.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5240</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
