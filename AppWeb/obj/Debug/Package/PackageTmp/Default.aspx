@@ -10,7 +10,7 @@
 
 <table width="100%">
 <tr>
-<td style="width:350px" valign="top" >
+<%--<td style="width:350px" valign="top" >
 
 <div class="cssTablaCabeceraRegistro">::Perfil/Función::</div>
 <div class="cssTablaRegistro">
@@ -21,7 +21,7 @@
   
 </div>
 
-</td>
+</td>--%>
 
 <td valign="top" width="*">
 

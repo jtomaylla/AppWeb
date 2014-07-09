@@ -126,6 +126,22 @@
             <td>:</td>
             <td><asp:TextBox ID="txtCantidad" runat="server" Width="100px"></asp:TextBox></td>
         </tr>
+        <tr>
+            <td>Lote</td>
+            <td>:</td>
+            <td><asp:TextBox ID="txtlote" runat="server" Width="100px"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td>F. Vence.</td>
+            <td>:</td>
+            <td><asp:TextBox ID="txtfechavencimiento" runat="server" Width="100px"></asp:TextBox>
+            <script type="text/javascript">
+                if (!document.layers) {
+                    document.write("<input type=button onclick='popUpCalendar(this, MainContent_txtfechavencimiento, \"dd/mm/yyyy\")'  name='select1' value='...' style='font-size:11px'>")
+                }
+            </script>            
+            </td>
+        </tr>
         </table>
         <asp:Button ID="btnGrabar" runat="server" Text="Grabar" CssClass="cssButton" onclick="btnGrabar_Click" />
         <asp:TextBox ID="txtPrecio" runat="server" Visible="false"></asp:TextBox>

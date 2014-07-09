@@ -2,13 +2,14 @@
 <publishData>
   <publishProfile publishUrl="C:\Users\BOCANEGRA\Desktop\AppWeb_Compilado" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="False">
     <file relUrl="frmOrdenCompraLista.aspx" publishTime="01/06/2014 07:50:15" />
+    <file relUrl="Images/close.gif" publishTime="12/14/2013 10:44:30" />
     <file relUrl="Default.aspx" publishTime="01/13/2014 20:53:17" />
-    <file relUrl="frmCotizacionLinea.aspx" publishTime="01/16/2014 19:12:47" />
     <file relUrl="Account/Images/drop1.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="frmInventarioArticulo.aspx" publishTime="01/16/2014 19:12:53" />
     <file relUrl="Account/Web.config" publishTime="11/10/2013 22:48:58" />
     <file relUrl="frmMantClase.aspx" publishTime="12/05/2013 23:32:40" />
     <file relUrl="Seguridad/frmUsuarioLista.aspx" publishTime="12/05/2013 23:47:51" />
+    <file relUrl="frmOrdenCompraAprobacionLogistica.aspx" publishTime="01/13/2014 20:22:53" />
     <file relUrl="frmOrdenCompra.aspx" publishTime="02/13/2014 18:32:26" />
     <file relUrl="frmDespachoPedidoInternoLista.aspx" publishTime="12/27/2013 16:45:31" />
     <file relUrl="Images/LOGO_COLOR_SES.png" publishTime="01/18/2014 00:13:51" />
@@ -17,9 +18,10 @@
     <file relUrl="frmRecepcionInventarioTransaccion.aspx" publishTime="01/09/2014 00:01:48" />
     <file relUrl="Images/left2.gif" publishTime="12/14/2013 10:44:18" />
     <file relUrl="bin/Microsoft.Practices.ServiceLocation.dll" publishTime="04/16/2010 14:16:58" />
-    <file relUrl="Images/thbackground.gif" publishTime="12/15/2013 09:02:40" />
+    <file relUrl="frmRecepcionInventario.aspx" publishTime="12/15/2013 22:46:11" />
     <file relUrl="Web.config" publishTime="03/28/2014 17:58:24" />
     <file relUrl="bin/Microsoft.Practices.Unity.dll" publishTime="04/16/2010 13:42:32" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="11/10/2013 22:48:58" />
     <file relUrl="frmGuiaRemisionPendiente.aspx" publishTime="01/12/2014 16:46:23" />
     <file relUrl="Account/Images/btn-bg1.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="Account/Images/GrillaEliminar.gif" publishTime="01/31/2014 01:17:14" />
@@ -29,7 +31,6 @@
     <file relUrl="frmPedidoConsulta.aspx" publishTime="01/14/2014 21:08:23" />
     <file relUrl="Account/Images/key.png" publishTime="01/31/2014 01:17:14" />
     <file relUrl="Global.asax" publishTime="11/10/2013 22:48:58" />
-    <file relUrl="Account/Images/headerBg.jpg" publishTime="01/31/2014 01:17:14" />
     <file relUrl="WebForm2.aspx" publishTime="12/15/2013 01:05:47" />
     <file relUrl="frmPedidoInterno.aspx" publishTime="12/18/2013 16:54:01" />
     <file relUrl="Account/Images/logorbtec.jpg" publishTime="01/31/2014 01:17:19" />
@@ -44,57 +45,53 @@
     <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="11/10/2013 22:48:58" />
     <file relUrl="frmPreArticuloSolicitud.aspx" publishTime="01/24/2014 12:09:42" />
     <file relUrl="frmOrdenCompraAprobacionLista.aspx" publishTime="01/13/2014 20:22:34" />
-    <file relUrl="Account/Images/headingBarBg.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="bin/AppDAL.pdb" publishTime="03/28/2014 12:53:20" />
-    <file relUrl="Images/right2.gif" publishTime="12/14/2013 10:44:24" />
     <file relUrl="Images/del.gif" publishTime="11/28/2013 21:29:59" />
     <file relUrl="Scripts/rbtec.js" publishTime="01/07/2014 07:51:53" />
-    <file relUrl="frmCotizacion.aspx" publishTime="01/16/2014 16:10:48" />
+    <file relUrl="bin/Microsoft.Practices.ServiceLocation.pdb" publishTime="04/16/2010 13:42:32" />
     <file relUrl="Images/_GrillaEliminar.gif" publishTime="11/23/2013 11:14:52" />
     <file relUrl="Images/drop1.gif" publishTime="12/14/2013 10:44:18" />
     <file relUrl="Scripts/jquery-1.4.1.js" publishTime="11/10/2013 22:48:58" />
     <file relUrl="frmMantProveedor.aspx" publishTime="12/29/2013 23:38:47" />
     <file relUrl="frmPedidoLista.aspx" publishTime="01/01/2014 14:15:14" />
     <file relUrl="frmPedidoLineaAprobacionLogistica.aspx" publishTime="01/14/2014 21:08:03" />
-    <file relUrl="frmIGV.aspx" publishTime="12/16/2013 10:52:12" />
     <file relUrl="frmMantArticulo.aspx" publishTime="01/19/2014 13:01:19" />
     <file relUrl="frmCotizacionSolicitud.aspx" publishTime="01/04/2014 00:03:08" />
     <file relUrl="frmParametro.aspx" publishTime="01/07/2014 22:40:23" />
     <file relUrl="frmOrdenCompraLineaAprobacionLogistica.aspx" publishTime="02/21/2014 15:42:27" />
     <file relUrl="Images/headerBg.jpg" publishTime="11/28/2013 19:59:40" />
-    <file relUrl="bin/Microsoft.Practices.ServiceLocation.pdb" publishTime="04/16/2010 13:42:32" />
+    <file relUrl="frmDespachoRecepcionLista.aspx" publishTime="12/29/2013 16:47:28" />
     <file relUrl="frmMantSede.aspx" publishTime="01/06/2014 14:13:47" />
     <file relUrl="Images/key.png" publishTime="12/05/2013 23:41:31" />
     <file relUrl="ListadoArticulos.aspx" publishTime="01/19/2014 01:53:17" />
-    <file relUrl="Images/logorbtec.jpg" publishTime="01/20/2014 12:28:14" />
     <file relUrl="frmMantFamilia.aspx" publishTime="12/05/2013 23:34:12" />
+    <file relUrl="ReportePedido.aspx" publishTime="01/01/2014 21:38:19" />
     <file relUrl="frmOrdenCompraLineaEnvioProveedor.aspx" publishTime="01/07/2014 07:41:28" />
     <file relUrl="error.html" publishTime="02/06/2014 23:45:05" />
-    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="11/10/2013 22:48:58" />
+    <file relUrl="Images/thbackground.gif" publishTime="12/15/2013 09:02:40" />
     <file relUrl="bin/Microsoft.Practices.Unity.Interception.pdb" publishTime="04/16/2010 13:42:32" />
     <file relUrl="frmPedidoAprobacionResponsable.aspx" publishTime="01/03/2014 23:47:11" />
     <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Common.pdb" publishTime="04/16/2010 14:11:48" />
     <file relUrl="Account/Images/LOGO_COLOR_SES.png" publishTime="01/31/2014 01:17:14" />
     <file relUrl="frmPreArticulo.aspx" publishTime="12/31/2013 08:16:14" />
     <file relUrl="Site.Master" publishTime="01/31/2014 12:18:06" />
-    <file relUrl="Account/Images/toolbarbck.gif" publishTime="01/31/2014 01:17:19" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Common.xml" publishTime="04/16/2010 14:11:48" />
     <file relUrl="Account/Images/drop2.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="Account/Images/close.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="frmGuiaRemisionPendienteLista.aspx" publishTime="01/12/2014 16:40:16" />
     <file relUrl="Images/firma.jpg" publishTime="01/09/2014 22:45:10" />
-    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Common.xml" publishTime="04/16/2010 14:11:48" />
+    <file relUrl="Account/Images/headerBg.jpg" publishTime="01/31/2014 01:17:14" />
     <file relUrl="Account/Images/thbackground.gif" publishTime="01/31/2014 01:17:19" />
     <file relUrl="bin/AppWeb.pdb" publishTime="03/28/2014 17:52:04" />
     <file relUrl="Account/Images/lightBlue_back.jpg" publishTime="01/31/2014 01:17:14" />
-    <file relUrl="Account/Images/right1.gif" publishTime="01/31/2014 01:17:19" />
-    <file relUrl="Scripts/popcalendar.js" publishTime="12/14/2013 10:36:37" />
-    <file relUrl="Images/close.gif" publishTime="12/14/2013 10:44:30" />
+    <file relUrl="About.aspx" publishTime="01/07/2014 22:20:45" />
+    <file relUrl="frmCotizacion.aspx" publishTime="01/16/2014 16:10:48" />
     <file relUrl="frmDespachoPedidoLista.aspx" publishTime="12/27/2013 23:17:26" />
     <file relUrl="bin/Microsoft.Practices.Unity.Interception.dll" publishTime="04/16/2010 13:42:32" />
     <file relUrl="Account/Images/left1.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="Images/GrillaEliminar.gif" publishTime="12/08/2013 21:44:32" />
     <file relUrl="frmOrdenCompraEnvioProveedor.aspx" publishTime="01/03/2014 17:53:19" />
-    <file relUrl="OrdenCompra.aspx" publishTime="01/15/2014 00:12:25" />
+    <file relUrl="Images/logorbtec.jpg" publishTime="01/20/2014 12:28:14" />
     <file relUrl="frmOrdenCompraAprobacion.aspx" publishTime="01/16/2014 08:51:34" />
     <file relUrl="Account/Register.aspx" publishTime="11/10/2013 22:48:58" />
     <file relUrl="frmReportePedidos.aspx" publishTime="01/01/2014 21:33:36" />
@@ -105,27 +102,28 @@
     <file relUrl="frmMovimientoInventario.aspx" publishTime="03/27/2014 14:12:38" />
     <file relUrl="frmProyecto.aspx" publishTime="01/07/2014 20:23:03" />
     <file relUrl="frmPatrimonio.aspx" publishTime="12/29/2013 23:40:21" />
+    <file relUrl="Seguridad/frmPerfilLista.aspx" publishTime="01/14/2014 08:01:49" />
     <file relUrl="Images/lightBlue_back.jpg" publishTime="12/05/2013 22:50:49" />
-    <file relUrl="Account/Images/firma.jpg" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="Scripts/popcalendar.js" publishTime="12/14/2013 10:36:37" />
     <file relUrl="frmOrdenCompraServicio.aspx" publishTime="01/09/2014 23:06:45" />
     <file relUrl="Account/Images/Grilla.Flecha.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="Account/Images/_GrillaEliminar.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="Images/drop2.gif" publishTime="12/14/2013 10:44:18" />
     <file relUrl="bin/Microsoft.Practices.Unity.pdb" publishTime="04/16/2010 13:42:32" />
-    <file relUrl="frmMantUnidadMedida.aspx" publishTime="12/05/2013 23:34:54" />
+    <file relUrl="Account/Images/firma.jpg" publishTime="01/31/2014 01:17:14" />
     <file relUrl="frmCotizacionLista.aspx" publishTime="12/07/2013 10:23:10" />
     <file relUrl="Account/ChangePassword.aspx" publishTime="11/10/2013 22:48:58" />
     <file relUrl="frmPedido.aspx" publishTime="01/31/2014 02:30:44" />
-    <file relUrl="Seguridad/frmFuncionLista.aspx" publishTime="12/03/2013 23:54:31" />
     <file relUrl="frmDespachoRecepcion.aspx" publishTime="01/12/2014 15:53:45" />
     <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll" publishTime="04/16/2010 14:16:58" />
-    <file relUrl="About.aspx" publishTime="01/07/2014 22:20:45" />
-    <file relUrl="ReportePedido.aspx" publishTime="01/01/2014 21:38:19" />
+    <file relUrl="Images/right2.gif" publishTime="12/14/2013 10:44:24" />
+    <file relUrl="frmCotizacionLinea.aspx" publishTime="01/16/2014 19:12:47" />
     <file relUrl="frmGuiaRemision.aspx" publishTime="12/28/2013 02:45:39" />
     <file relUrl="Images/btn-bg1.gif" publishTime="11/28/2013 20:15:03" />
     <file relUrl="frmNivelAprobacion.aspx" publishTime="01/15/2014 16:44:30" />
     <file relUrl="Account/Login.aspx" publishTime="01/07/2014 22:44:28" />
-    <file relUrl="frmRecepcionInventario.aspx" publishTime="12/15/2013 22:46:11" />
+    <file relUrl="Account/Images/right1.gif" publishTime="01/31/2014 01:17:19" />
+    <file relUrl="Styles/Site.css" publishTime="01/14/2014 21:00:33" />
     <file relUrl="KardexArticulo.aspx" publishTime="01/06/2014 07:26:51" />
     <file relUrl="Account/ChangePasswordSuccess.aspx" publishTime="11/10/2013 22:48:58" />
     <file relUrl="Account/Images/del.gif" publishTime="01/31/2014 01:17:14" />
@@ -133,38 +131,37 @@
     <file relUrl="Images/left1.gif" publishTime="12/14/2013 10:44:18" />
     <file relUrl="frmRecepcionServicio.aspx" publishTime="01/24/2014 03:42:34" />
     <file relUrl="Images/right1.gif" publishTime="12/14/2013 10:44:24" />
-    <file relUrl="frmDespachoRecepcionLista.aspx" publishTime="12/29/2013 16:47:28" />
+    <file relUrl="OrdenCompra.aspx" publishTime="01/15/2014 00:12:25" />
     <file relUrl="Images/Grilla.Flecha.gif" publishTime="11/16/2013 14:21:20" />
+    <file relUrl="Account/Images/toolbarbck.gif" publishTime="01/31/2014 01:17:19" />
     <file relUrl="WebForm1.aspx" publishTime="11/10/2013 23:03:10" />
-    <file relUrl="frmOrdenCompraAprobacionLogistica.aspx" publishTime="01/13/2014 20:22:53" />
+    <file relUrl="Seguridad/frmFuncionLista.aspx" publishTime="12/03/2013 23:54:31" />
+    <file relUrl="frmMantUnidadMedida.aspx" publishTime="12/05/2013 23:34:54" />
     <file relUrl="frmOrdenCompraImpresion.aspx" publishTime="12/17/2013 23:53:49" />
-    <file relUrl="Seguridad/frmPerfilLista.aspx" publishTime="01/14/2014 08:01:49" />
-    <file relUrl="Styles/Site.css" publishTime="01/14/2014 21:00:33" />
+    <file relUrl="Account/Images/headingBarBg.gif" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="frmIGV.aspx" publishTime="12/16/2013 10:52:12" />
   </publishProfile>
   <publishProfile publishUrl="http://localhost/Logistica3" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="AppWeb_FS" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
     <file relUrl="frmOrdenCompraLista.aspx" publishTime="01/06/2014 07:50:15" />
-    <file relUrl="Images/close.gif" publishTime="12/14/2013 10:44:30" />
-    <file relUrl="Default.aspx" publishTime="01/13/2014 20:53:17" />
+    <file relUrl="Default.aspx" publishTime="07/07/2014 12:21:34" />
     <file relUrl="frmCotizacionLinea.aspx" publishTime="01/16/2014 19:12:47" />
     <file relUrl="Account/Images/drop1.gif" publishTime="01/31/2014 01:17:14" />
-    <file relUrl="frmInventarioArticulo.aspx" publishTime="01/16/2014 19:12:53" />
-    <file relUrl="Account/Web.config" publishTime="05/07/2014 08:46:52" />
+    <file relUrl="frmInventarioArticulo.aspx" publishTime="07/09/2014 08:29:16" />
+    <file relUrl="Account/Web.config" publishTime="11/10/2013 22:48:58" />
     <file relUrl="frmMantClase.aspx" publishTime="12/05/2013 23:32:40" />
     <file relUrl="Seguridad/frmUsuarioLista.aspx" publishTime="12/05/2013 23:47:51" />
-    <file relUrl="frmOrdenCompraAprobacionLogistica.aspx" publishTime="01/13/2014 20:22:53" />
     <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Common.pdb" publishTime="04/16/2010 14:11:48" />
     <file relUrl="frmDespachoPedidoInternoLista.aspx" publishTime="12/27/2013 16:45:31" />
     <file relUrl="Images/LOGO_COLOR_SES.png" publishTime="01/18/2014 00:13:51" />
     <file relUrl="frmPedidoCodigoPresupuesto.aspx" publishTime="01/14/2014 21:08:54" />
-    <file relUrl="bin/AppWeb.dll" publishTime="05/07/2014 08:27:24" />
+    <file relUrl="bin/AppWeb.dll" publishTime="07/08/2014 16:16:33" />
     <file relUrl="frmRecepcionInventarioTransaccion.aspx" publishTime="01/09/2014 00:01:48" />
     <file relUrl="Images/left2.gif" publishTime="12/14/2013 10:44:18" />
     <file relUrl="bin/Microsoft.Practices.ServiceLocation.dll" publishTime="04/16/2010 14:16:58" />
-    <file relUrl="Images/thbackground.gif" publishTime="12/15/2013 09:02:40" />
-    <file relUrl="Web.config" publishTime="05/20/2014 11:23:37" />
+    <file relUrl="Web.config" publishTime="07/08/2014 16:16:35" />
     <file relUrl="bin/Microsoft.Practices.Unity.dll" publishTime="04/16/2010 13:42:32" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="11/10/2013 22:48:58" />
     <file relUrl="frmGuiaRemisionPendiente.aspx" publishTime="01/12/2014 16:46:23" />
-    <file relUrl="Account/Images/btn-bg1.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="Account/Images/GrillaEliminar.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="Images/headingBarBg.gif" publishTime="11/30/2013 10:07:31" />
     <file relUrl="frmRecepcion.aspx" publishTime="01/18/2014 17:47:39" />
@@ -172,6 +169,7 @@
     <file relUrl="frmPedidoConsulta.aspx" publishTime="01/14/2014 21:08:23" />
     <file relUrl="Account/Images/key.png" publishTime="01/31/2014 01:17:14" />
     <file relUrl="Global.asax" publishTime="11/10/2013 22:48:58" />
+    <file relUrl="Account/Images/headerBg.jpg" publishTime="01/31/2014 01:17:14" />
     <file relUrl="WebForm2.aspx" publishTime="12/15/2013 01:05:47" />
     <file relUrl="frmPedidoInterno.aspx" publishTime="12/18/2013 16:54:01" />
     <file relUrl="Account/Images/logorbtec.jpg" publishTime="01/31/2014 01:17:19" />
@@ -179,30 +177,29 @@
     <file relUrl="Account/Images/right2.gif" publishTime="01/31/2014 01:17:19" />
     <file relUrl="frmCotizacionEnProceso.aspx" publishTime="12/15/2013 10:27:51" />
     <file relUrl="frmVisorReporte.aspx" publishTime="12/29/2013 17:35:28" />
-    <file relUrl="frmPedidoLineaAprobacionResponsable.aspx" publishTime="12/18/2013 20:32:02" />
-    <file relUrl="bin/AjaxControlToolkit.dll" publishTime="10/05/2013 22:51:53" />
     <file relUrl="Account/Images/left2.gif" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="Account/Images/btn-bg1.gif" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="bin/AjaxControlToolkit.dll" publishTime="10/05/2013 22:51:53" />
+    <file relUrl="bin/AppDAL.dll" publishTime="07/08/2014 16:16:30" />
     <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="11/10/2013 22:48:58" />
+    <file relUrl="frmPreArticuloSolicitud.aspx" publishTime="01/24/2014 12:09:42" />
     <file relUrl="frmOrdenCompraAprobacionLista.aspx" publishTime="01/13/2014 20:22:34" />
+    <file relUrl="frmPedidoLineaAprobacionResponsable.aspx" publishTime="12/18/2013 20:32:02" />
     <file relUrl="KardexArticulo.aspx" publishTime="01/06/2014 07:26:51" />
-    <file relUrl="bin/AppDAL.pdb" publishTime="03/28/2014 12:53:20" />
+    <file relUrl="bin/AppDAL.pdb" publishTime="07/08/2014 16:16:30" />
     <file relUrl="frmPedidoLista.aspx" publishTime="01/01/2014 14:15:14" />
     <file relUrl="Images/del.gif" publishTime="11/28/2013 21:29:59" />
     <file relUrl="Scripts/rbtec.js" publishTime="01/07/2014 07:51:53" />
-    <file relUrl="frmRecepcionInventario.aspx" publishTime="12/15/2013 22:46:11" />
+    <file relUrl="frmCotizacion.aspx" publishTime="01/16/2014 16:10:48" />
     <file relUrl="Images/drop2.gif" publishTime="12/14/2013 10:44:18" />
     <file relUrl="Images/drop1.gif" publishTime="12/14/2013 10:44:18" />
-    <file relUrl="bin/AppDAL.dll" publishTime="03/28/2014 12:53:20" />
     <file relUrl="Account/Images/del.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="frmMantProveedor.aspx" publishTime="12/29/2013 23:38:47" />
     <file relUrl="Account/Images/lightBlue_back.jpg" publishTime="01/31/2014 01:17:14" />
     <file relUrl="Scripts/jquery-1.4.1.js" publishTime="11/10/2013 22:48:58" />
     <file relUrl="frmOrdenCompra.aspx" publishTime="02/13/2014 18:32:26" />
-    <file relUrl="frmIGV.aspx" publishTime="12/16/2013 10:52:12" />
-    <file relUrl="frmPreArticuloSolicitud.aspx" publishTime="01/24/2014 12:09:42" />
     <file relUrl="frmMantArticulo.aspx" publishTime="01/19/2014 13:01:19" />
     <file relUrl="frmCotizacionSolicitud.aspx" publishTime="01/04/2014 00:03:08" />
-    <file relUrl="frmPedidoPorCotizarLista.aspx" publishTime="01/04/2014 00:02:18" />
     <file relUrl="frmOrdenCompraLineaAprobacionLogistica.aspx" publishTime="02/21/2014 15:42:27" />
     <file relUrl="Images/headerBg.jpg" publishTime="11/28/2013 19:59:40" />
     <file relUrl="bin/Microsoft.Practices.ServiceLocation.pdb" publishTime="04/16/2010 13:42:32" />
@@ -213,26 +210,26 @@
     <file relUrl="frmMantFamilia.aspx" publishTime="12/05/2013 23:34:12" />
     <file relUrl="frmOrdenCompraLineaEnvioProveedor.aspx" publishTime="01/07/2014 07:41:28" />
     <file relUrl="error.html" publishTime="02/06/2014 23:45:05" />
-    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="11/10/2013 22:48:58" />
+    <file relUrl="Images/thbackground.gif" publishTime="12/15/2013 09:02:40" />
     <file relUrl="bin/Microsoft.Practices.Unity.Interception.pdb" publishTime="04/16/2010 13:42:32" />
     <file relUrl="frmPedidoAprobacionResponsable.aspx" publishTime="01/03/2014 23:47:11" />
     <file relUrl="Styles/Site.css" publishTime="01/14/2014 21:00:33" />
     <file relUrl="Account/Images/LOGO_COLOR_SES.png" publishTime="01/31/2014 01:17:14" />
     <file relUrl="frmPedidoLineaAprobacionLogistica.aspx" publishTime="01/14/2014 21:08:03" />
     <file relUrl="frmPreArticulo.aspx" publishTime="12/31/2013 08:16:14" />
-    <file relUrl="Site.Master" publishTime="01/31/2014 12:18:06" />
+    <file relUrl="Site.Master" publishTime="07/08/2014 12:12:08" />
     <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Common.xml" publishTime="04/16/2010 14:11:48" />
     <file relUrl="Account/Images/drop2.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="Account/Images/close.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="frmGuiaRemisionPendienteLista.aspx" publishTime="01/12/2014 16:40:16" />
     <file relUrl="Images/firma.jpg" publishTime="01/09/2014 22:45:10" />
-    <file relUrl="Account/Images/headerBg.jpg" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="frmParametro.aspx" publishTime="01/07/2014 22:40:23" />
     <file relUrl="Account/Images/thbackground.gif" publishTime="01/31/2014 01:17:19" />
-    <file relUrl="bin/AppWeb.pdb" publishTime="05/07/2014 08:27:24" />
+    <file relUrl="bin/AppWeb.pdb" publishTime="07/08/2014 16:16:33" />
+    <file relUrl="Account/Images/right1.gif" publishTime="01/31/2014 01:17:19" />
     <file relUrl="About.aspx" publishTime="01/07/2014 22:20:45" />
-    <file relUrl="frmCotizacion.aspx" publishTime="01/16/2014 16:10:48" />
+    <file relUrl="Images/close.gif" publishTime="12/14/2013 10:44:30" />
     <file relUrl="frmDespachoPedidoLista.aspx" publishTime="12/27/2013 23:17:26" />
-    <file relUrl="Account/Images/headingBarBg.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="bin/Microsoft.Practices.Unity.Interception.dll" publishTime="04/16/2010 13:42:32" />
     <file relUrl="frmDespachoPedidoInterno.aspx" publishTime="01/29/2014 16:58:47" />
     <file relUrl="Images/GrillaEliminar.gif" publishTime="12/08/2013 21:44:32" />
@@ -244,10 +241,11 @@
     <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll" publishTime="04/16/2010 14:16:58" />
     <file relUrl="Seguridad/frmUsuarioCambioClave.aspx" publishTime="12/05/2013 23:38:46" />
     <file relUrl="frmPedidoAprobacionLogistica.aspx" publishTime="01/03/2014 23:47:05" />
-    <file relUrl="Account/ChangePassword.aspx" publishTime="11/10/2013 22:48:58" />
+    <file relUrl="frmPedidoPorCotizarLista.aspx" publishTime="01/04/2014 00:02:18" />
     <file relUrl="frmMovimientoInventario.aspx" publishTime="03/27/2014 14:12:38" />
     <file relUrl="frmProyecto.aspx" publishTime="01/07/2014 20:23:03" />
     <file relUrl="frmPatrimonio.aspx" publishTime="12/29/2013 23:40:21" />
+    <file relUrl="Seguridad/frmPerfilLista.aspx" publishTime="01/14/2014 08:01:49" />
     <file relUrl="Images/lightBlue_back.jpg" publishTime="12/05/2013 22:50:49" />
     <file relUrl="Account/Images/firma.jpg" publishTime="01/31/2014 01:17:14" />
     <file relUrl="frmOrdenCompraServicio.aspx" publishTime="01/09/2014 23:06:45" />
@@ -256,17 +254,19 @@
     <file relUrl="bin/Microsoft.Practices.Unity.pdb" publishTime="04/16/2010 13:42:32" />
     <file relUrl="frmReportePedidos.aspx" publishTime="01/01/2014 21:33:36" />
     <file relUrl="frmCotizacionLista.aspx" publishTime="12/07/2013 10:23:10" />
-    <file relUrl="frmPedido.aspx" publishTime="01/31/2014 02:30:44" />
+    <file relUrl="Account/ChangePassword.aspx" publishTime="11/10/2013 22:48:58" />
+    <file relUrl="frmPedido.aspx" publishTime="07/07/2014 12:37:57" />
+    <file relUrl="Seguridad/frmFuncionLista.aspx" publishTime="12/03/2013 23:54:31" />
     <file relUrl="Account/Images/left1.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="frmDespachoRecepcion.aspx" publishTime="01/12/2014 15:53:45" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll" publishTime="04/16/2010 14:16:58" />
     <file relUrl="Images/right2.gif" publishTime="12/14/2013 10:44:24" />
-    <file relUrl="frmParametro.aspx" publishTime="01/07/2014 22:40:23" />
     <file relUrl="ReportePedido.aspx" publishTime="01/01/2014 21:38:19" />
     <file relUrl="frmGuiaRemision.aspx" publishTime="12/28/2013 02:45:39" />
     <file relUrl="Images/btn-bg1.gif" publishTime="11/28/2013 20:15:03" />
     <file relUrl="frmNivelAprobacion.aspx" publishTime="01/15/2014 16:44:30" />
-    <file relUrl="Account/Login.aspx" publishTime="01/07/2014 22:44:28" />
-    <file relUrl="Account/Images/right1.gif" publishTime="01/31/2014 01:17:19" />
+    <file relUrl="Account/Login.aspx" publishTime="07/08/2014 13:27:35" />
+    <file relUrl="frmRecepcionInventario.aspx" publishTime="12/15/2013 22:46:11" />
     <file relUrl="Scripts/popcalendar.js" publishTime="12/14/2013 10:36:37" />
     <file relUrl="frmMantUnidadMedida.aspx" publishTime="12/05/2013 23:34:54" />
     <file relUrl="Account/ChangePasswordSuccess.aspx" publishTime="11/10/2013 22:48:58" />
@@ -277,35 +277,163 @@
     <file relUrl="Images/Grilla.Flecha.gif" publishTime="11/16/2013 14:21:20" />
     <file relUrl="Account/Images/toolbarbck.gif" publishTime="01/31/2014 01:17:19" />
     <file relUrl="WebForm1.aspx" publishTime="11/10/2013 23:03:10" />
-    <file relUrl="Seguridad/frmFuncionLista.aspx" publishTime="12/03/2013 23:54:31" />
+    <file relUrl="frmOrdenCompraAprobacionLogistica.aspx" publishTime="01/13/2014 20:22:53" />
     <file relUrl="frmOrdenCompraImpresion.aspx" publishTime="12/17/2013 23:53:49" />
-    <file relUrl="Seguridad/frmPerfilLista.aspx" publishTime="01/14/2014 08:01:49" />
-    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll" publishTime="04/16/2010 14:16:58" />
+    <file relUrl="Account/Images/headingBarBg.gif" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="frmIGV.aspx" publishTime="12/16/2013 10:52:12" />
   </publishProfile>
   <publishProfile publishUrl="ftp://192.168.1.26/logistica3/" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="/Logistica3" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="AppWebFTP" publishMethod="FTP" replaceMatchingFiles="True" userName="jtomaylla" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOl4HRz01wEOVZBqX+WgbvQAAAAACAAAAAAAQZgAAAAEAACAAAACiLLz2tm0pFdClJTHaRl1WLRLlxHxfV+7N2cxu3OX+rQAAAAAOgAAAAAIAACAAAABWBOL9nHQe/RTwFIpmN9h7+GOk0x8uuPRjTqpF5Th00CAAAACZwNoFQVuBL+x5Iqs5z1rWbRCeFllyNrnpIxUl9QtH2kAAAAApYnO748Mue3Fw7d4dkb+V4AqCggtX8XIRjDl/B61/ZXzEEjUIR/5o/7qYUvfYC82Ebr18BpQJZ7hxrZeB80Oy" SelectedForPublish="False">
     <file relUrl="frmOrdenCompraLista.aspx" publishTime="01/06/2014 07:50:15" />
-    <file relUrl="Images/close.gif" publishTime="12/14/2013 10:44:30" />
-    <file relUrl="Default.aspx" publishTime="01/13/2014 20:53:17" />
-    <file relUrl="frmCotizacionLinea.aspx" publishTime="01/16/2014 19:12:47" />
+    <file relUrl="Default.aspx" publishTime="07/07/2014 12:21:34" />
     <file relUrl="Account/Images/drop1.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="frmInventarioArticulo.aspx" publishTime="01/16/2014 19:12:53" />
-    <file relUrl="Account/Web.config" publishTime="05/07/2014 08:46:52" />
+    <file relUrl="Account/Web.config" publishTime="11/10/2013 22:48:58" />
     <file relUrl="frmMantClase.aspx" publishTime="12/05/2013 23:32:40" />
     <file relUrl="Seguridad/frmUsuarioLista.aspx" publishTime="12/05/2013 23:47:51" />
-    <file relUrl="frmOrdenCompraAprobacionLogistica.aspx" publishTime="01/13/2014 20:22:53" />
-    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Common.pdb" publishTime="04/16/2010 14:11:48" />
     <file relUrl="frmDespachoPedidoInternoLista.aspx" publishTime="12/27/2013 16:45:31" />
     <file relUrl="Images/LOGO_COLOR_SES.png" publishTime="01/18/2014 00:13:51" />
     <file relUrl="frmPedidoCodigoPresupuesto.aspx" publishTime="01/14/2014 21:08:54" />
-    <file relUrl="bin/AppWeb.dll" publishTime="05/07/2014 08:27:24" />
+    <file relUrl="bin/AppWeb.dll" publishTime="07/07/2014 15:14:35" />
     <file relUrl="frmRecepcionInventarioTransaccion.aspx" publishTime="01/09/2014 00:01:48" />
     <file relUrl="Images/left2.gif" publishTime="12/14/2013 10:44:18" />
-    <file relUrl="bin/Microsoft.Practices.ServiceLocation.dll" publishTime="04/16/2010 14:16:58" />
-    <file relUrl="Images/thbackground.gif" publishTime="12/15/2013 09:02:40" />
     <file relUrl="Web.config" publishTime="05/07/2014 09:04:07" />
-    <file relUrl="bin/Microsoft.Practices.Unity.dll" publishTime="04/16/2010 13:42:32" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="11/10/2013 22:48:58" />
     <file relUrl="frmGuiaRemisionPendiente.aspx" publishTime="01/12/2014 16:46:23" />
+    <file relUrl="Account/Images/GrillaEliminar.gif" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="Images/headingBarBg.gif" publishTime="11/30/2013 10:07:31" />
+    <file relUrl="frmRecepcion.aspx" publishTime="01/18/2014 17:47:39" />
+    <file relUrl="Account/Images/lightBlue_back.jpg" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="frmPedidoConsulta.aspx" publishTime="01/14/2014 21:08:23" />
+    <file relUrl="Account/Images/key.png" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="Global.asax" publishTime="11/10/2013 22:48:58" />
+    <file relUrl="Account/Images/headerBg.jpg" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="WebForm2.aspx" publishTime="12/15/2013 01:05:47" />
+    <file relUrl="Seguridad/frmPerfilLista.aspx" publishTime="01/14/2014 08:01:49" />
+    <file relUrl="frmPedidoInterno.aspx" publishTime="12/18/2013 16:54:01" />
+    <file relUrl="Account/Images/logorbtec.jpg" publishTime="01/31/2014 01:17:19" />
+    <file relUrl="Seguridad/Scripts/rbtec.js" publishTime="12/03/2013 23:54:56" />
+    <file relUrl="Account/Images/right2.gif" publishTime="01/31/2014 01:17:19" />
+    <file relUrl="frmCotizacionEnProceso.aspx" publishTime="12/15/2013 10:27:51" />
+    <file relUrl="frmVisorReporte.aspx" publishTime="12/29/2013 17:35:28" />
+    <file relUrl="Account/Images/left2.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="Account/Images/btn-bg1.gif" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="bin/AjaxControlToolkit.dll" publishTime="10/05/2013 22:51:53" />
+    <file relUrl="bin/AppDAL.dll" publishTime="07/07/2014 15:14:32" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="11/10/2013 22:48:58" />
+    <file relUrl="frmPreArticuloSolicitud.aspx" publishTime="01/24/2014 12:09:42" />
+    <file relUrl="frmOrdenCompraAprobacionLista.aspx" publishTime="01/13/2014 20:22:34" />
+    <file relUrl="frmPedidoLineaAprobacionResponsable.aspx" publishTime="12/18/2013 20:32:02" />
+    <file relUrl="Images/toolbarbck.gif" publishTime="12/15/2013 09:00:52" />
+    <file relUrl="bin/AppDAL.pdb" publishTime="07/07/2014 15:14:32" />
+    <file relUrl="Images/del.gif" publishTime="11/28/2013 21:29:59" />
+    <file relUrl="Scripts/rbtec.js" publishTime="01/07/2014 07:51:53" />
+    <file relUrl="frmCotizacion.aspx" publishTime="01/16/2014 16:10:48" />
+    <file relUrl="Images/drop2.gif" publishTime="12/14/2013 10:44:18" />
+    <file relUrl="Images/drop1.gif" publishTime="12/14/2013 10:44:18" />
+    <file relUrl="Account/Images/del.gif" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="frmMantProveedor.aspx" publishTime="12/29/2013 23:38:47" />
+    <file relUrl="frmPedidoLista.aspx" publishTime="01/01/2014 14:15:14" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="11/10/2013 22:48:58" />
+    <file relUrl="frmOrdenCompra.aspx" publishTime="02/13/2014 18:32:26" />
+    <file relUrl="frmMantArticulo.aspx" publishTime="01/19/2014 13:01:19" />
+    <file relUrl="frmCotizacionSolicitud.aspx" publishTime="01/04/2014 00:03:08" />
+    <file relUrl="frmOrdenCompraLineaAprobacionLogistica.aspx" publishTime="02/21/2014 15:42:27" />
+    <file relUrl="Images/headerBg.jpg" publishTime="11/28/2013 19:59:40" />
+    <file relUrl="frmDespachoRecepcionLista.aspx" publishTime="12/29/2013 16:47:28" />
+    <file relUrl="frmMantSede.aspx" publishTime="01/06/2014 14:13:47" />
+    <file relUrl="Images/key.png" publishTime="12/05/2013 23:41:31" />
+    <file relUrl="ListadoArticulos.aspx" publishTime="01/19/2014 01:53:17" />
+    <file relUrl="frmMantFamilia.aspx" publishTime="12/05/2013 23:34:12" />
+    <file relUrl="frmOrdenCompraLineaEnvioProveedor.aspx" publishTime="01/07/2014 07:41:28" />
+    <file relUrl="error.html" publishTime="02/06/2014 23:45:05" />
+    <file relUrl="Images/thbackground.gif" publishTime="12/15/2013 09:02:40" />
+    <file relUrl="ReportePedido.aspx" publishTime="01/01/2014 21:38:19" />
+    <file relUrl="frmPedidoAprobacionResponsable.aspx" publishTime="01/03/2014 23:47:11" />
+    <file relUrl="Styles/Site.css" publishTime="01/14/2014 21:00:33" />
+    <file relUrl="Account/Images/LOGO_COLOR_SES.png" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="frmPedidoLineaAprobacionLogistica.aspx" publishTime="01/14/2014 21:08:03" />
+    <file relUrl="frmPreArticulo.aspx" publishTime="12/31/2013 08:16:14" />
+    <file relUrl="Site.Master" publishTime="07/07/2014 16:57:08" />
+    <file relUrl="Account/Images/toolbarbck.gif" publishTime="01/31/2014 01:17:19" />
+    <file relUrl="Account/Images/drop2.gif" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="Account/Images/close.gif" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="frmGuiaRemisionPendienteLista.aspx" publishTime="01/12/2014 16:40:16" />
+    <file relUrl="Images/firma.jpg" publishTime="01/09/2014 22:45:10" />
+    <file relUrl="frmParametro.aspx" publishTime="01/07/2014 22:40:23" />
+    <file relUrl="Account/Images/thbackground.gif" publishTime="01/31/2014 01:17:19" />
+    <file relUrl="bin/AppWeb.pdb" publishTime="07/07/2014 15:14:35" />
+    <file relUrl="Account/Images/right1.gif" publishTime="01/31/2014 01:17:19" />
+    <file relUrl="About.aspx" publishTime="01/07/2014 22:20:45" />
+    <file relUrl="Images/close.gif" publishTime="12/14/2013 10:44:30" />
+    <file relUrl="frmDespachoPedidoLista.aspx" publishTime="12/27/2013 23:17:26" />
+    <file relUrl="frmDespachoPedidoInterno.aspx" publishTime="01/29/2014 16:58:47" />
+    <file relUrl="Images/GrillaEliminar.gif" publishTime="12/08/2013 21:44:32" />
+    <file relUrl="frmOrdenCompraEnvioProveedor.aspx" publishTime="01/03/2014 17:53:19" />
+    <file relUrl="Images/logorbtec.jpg" publishTime="01/20/2014 12:28:14" />
+    <file relUrl="frmOrdenCompraAprobacion.aspx" publishTime="01/16/2014 08:51:34" />
+    <file relUrl="Account/Register.aspx" publishTime="11/10/2013 22:48:58" />
+    <file relUrl="Images/_GrillaEliminar.gif" publishTime="11/23/2013 11:14:52" />
+    <file relUrl="frmCotizacionLista.aspx" publishTime="12/07/2013 10:23:10" />
+    <file relUrl="Seguridad/frmUsuarioCambioClave.aspx" publishTime="12/05/2013 23:38:46" />
+    <file relUrl="frmPedidoAprobacionLogistica.aspx" publishTime="01/03/2014 23:47:05" />
+    <file relUrl="frmPedidoPorCotizarLista.aspx" publishTime="01/04/2014 00:02:18" />
+    <file relUrl="frmMovimientoInventario.aspx" publishTime="03/27/2014 14:12:38" />
+    <file relUrl="frmProyecto.aspx" publishTime="01/07/2014 20:23:03" />
+    <file relUrl="frmPatrimonio.aspx" publishTime="12/29/2013 23:40:21" />
+    <file relUrl="KardexArticulo.aspx" publishTime="01/06/2014 07:26:51" />
+    <file relUrl="Images/lightBlue_back.jpg" publishTime="12/05/2013 22:50:49" />
+    <file relUrl="Account/Images/firma.jpg" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="frmOrdenCompraServicio.aspx" publishTime="01/09/2014 23:06:45" />
+    <file relUrl="Account/Images/Grilla.Flecha.gif" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="Account/Images/_GrillaEliminar.gif" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="frmReportePedidos.aspx" publishTime="01/01/2014 21:33:36" />
+    <file relUrl="Account/ChangePassword.aspx" publishTime="11/10/2013 22:48:58" />
+    <file relUrl="frmPedido.aspx" publishTime="07/07/2014 12:37:57" />
+    <file relUrl="Seguridad/frmFuncionLista.aspx" publishTime="12/03/2013 23:54:31" />
+    <file relUrl="Account/Images/left1.gif" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="frmDespachoRecepcion.aspx" publishTime="01/12/2014 15:53:45" />
+    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll" publishTime="04/16/2010 14:16:58" />
+    <file relUrl="Images/right2.gif" publishTime="12/14/2013 10:44:24" />
+    <file relUrl="frmCotizacionLinea.aspx" publishTime="01/16/2014 19:12:47" />
+    <file relUrl="frmGuiaRemision.aspx" publishTime="12/28/2013 02:45:39" />
+    <file relUrl="Images/btn-bg1.gif" publishTime="11/28/2013 20:15:03" />
+    <file relUrl="frmNivelAprobacion.aspx" publishTime="01/15/2014 16:44:30" />
+    <file relUrl="Account/Login.aspx" publishTime="07/07/2014 15:17:15" />
+    <file relUrl="frmRecepcionInventario.aspx" publishTime="12/15/2013 22:46:11" />
+    <file relUrl="Scripts/popcalendar.js" publishTime="12/14/2013 10:36:37" />
+    <file relUrl="frmMantUnidadMedida.aspx" publishTime="12/05/2013 23:34:54" />
+    <file relUrl="Account/ChangePasswordSuccess.aspx" publishTime="11/10/2013 22:48:58" />
+    <file relUrl="Images/left1.gif" publishTime="12/14/2013 10:44:18" />
+    <file relUrl="frmRecepcionServicio.aspx" publishTime="01/24/2014 03:42:34" />
+    <file relUrl="Images/right1.gif" publishTime="12/14/2013 10:44:24" />
+    <file relUrl="OrdenCompra.aspx" publishTime="01/15/2014 00:12:25" />
+    <file relUrl="Images/Grilla.Flecha.gif" publishTime="11/16/2013 14:21:20" />
+    <file relUrl="WebForm1.aspx" publishTime="11/10/2013 23:03:10" />
+    <file relUrl="frmOrdenCompraAprobacionLogistica.aspx" publishTime="01/13/2014 20:22:53" />
+    <file relUrl="frmOrdenCompraImpresion.aspx" publishTime="12/17/2013 23:53:49" />
+    <file relUrl="Account/Images/headingBarBg.gif" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="frmIGV.aspx" publishTime="12/16/2013 10:52:12" />
+  </publishProfile>
+  <publishProfile publishUrl="ftp://70.38.64.52/logistica3/" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="FTP_AppWeb_iWEB" publishMethod="FTP" replaceMatchingFiles="True" userName="jtomaylla" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAb+ZlGygZLU+knzPUSQ63oQAAAAACAAAAAAAQZgAAAAEAACAAAABliGRFElvnuB9qqxo1DShkGIBwb6xusGUjQFSYKl5uZwAAAAAOgAAAAAIAACAAAAAAApwPBnAfK7+WoycqW5E/K1jUaiHhl+b4iwB5Q9JZ9yAAAAAGBbDhCY4g8HNvlhvlpHLayWVSJaNw7nDYfSSlKTqxR0AAAABpM+io6GWK76iJKhwukBIuX9Wj4kHNhlugv+5TVDCWmxwk4Q0sb8RTv8Q5VK+OeIpX/HDkHE972gwNgDjiBVFk" SelectedForPublish="False">
+    <file relUrl="frmOrdenCompraLista.aspx" publishTime="01/06/2014 07:50:15" />
+    <file relUrl="Images/close.gif" publishTime="12/14/2013 10:44:30" />
+    <file relUrl="Default.aspx" publishTime="07/07/2014 12:21:34" />
+    <file relUrl="Account/Images/drop1.gif" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="frmInventarioArticulo.aspx" publishTime="01/16/2014 19:12:53" />
+    <file relUrl="Account/Web.config" publishTime="11/10/2013 22:48:58" />
+    <file relUrl="frmMantClase.aspx" publishTime="12/05/2013 23:32:40" />
+    <file relUrl="Seguridad/frmUsuarioLista.aspx" publishTime="12/05/2013 23:47:51" />
+    <file relUrl="frmOrdenCompraAprobacionLogistica.aspx" publishTime="01/13/2014 20:22:53" />
+    <file relUrl="frmMantUnidadMedida.aspx" publishTime="12/05/2013 23:34:54" />
+    <file relUrl="frmDespachoPedidoInternoLista.aspx" publishTime="12/27/2013 16:45:31" />
+    <file relUrl="Images/LOGO_COLOR_SES.png" publishTime="01/18/2014 00:13:51" />
+    <file relUrl="frmPedidoCodigoPresupuesto.aspx" publishTime="01/14/2014 21:08:54" />
+    <file relUrl="bin/AppWeb.dll" publishTime="07/07/2014 15:14:35" />
+    <file relUrl="frmRecepcionInventarioTransaccion.aspx" publishTime="01/09/2014 00:01:48" />
+    <file relUrl="Images/left2.gif" publishTime="12/14/2013 10:44:18" />
+    <file relUrl="Images/thbackground.gif" publishTime="12/15/2013 09:02:40" />
+    <file relUrl="Web.config" publishTime="07/07/2014 15:15:07" />
+    <file relUrl="frmGuiaRemisionPendiente.aspx" publishTime="01/12/2014 16:46:23" />
     <file relUrl="Account/Images/GrillaEliminar.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="Images/headingBarBg.gif" publishTime="11/30/2013 10:07:31" />
     <file relUrl="frmRecepcion.aspx" publishTime="01/18/2014 17:47:39" />
@@ -320,103 +448,98 @@
     <file relUrl="Account/Images/right2.gif" publishTime="01/31/2014 01:17:19" />
     <file relUrl="frmCotizacionEnProceso.aspx" publishTime="12/15/2013 10:27:51" />
     <file relUrl="frmVisorReporte.aspx" publishTime="12/29/2013 17:35:28" />
-    <file relUrl="frmPedidoLineaAprobacionResponsable.aspx" publishTime="12/18/2013 20:32:02" />
-    <file relUrl="bin/AjaxControlToolkit.dll" publishTime="10/05/2013 22:51:53" />
     <file relUrl="Account/Images/left2.gif" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="Account/Images/btn-bg1.gif" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="bin/AjaxControlToolkit.dll" publishTime="10/05/2013 22:51:53" />
+    <file relUrl="bin/AppDAL.dll" publishTime="07/07/2014 15:14:32" />
     <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="11/10/2013 22:48:58" />
+    <file relUrl="frmPreArticuloSolicitud.aspx" publishTime="01/24/2014 12:09:42" />
     <file relUrl="frmOrdenCompraAprobacionLista.aspx" publishTime="01/13/2014 20:22:34" />
-    <file relUrl="KardexArticulo.aspx" publishTime="01/06/2014 07:26:51" />
-    <file relUrl="bin/AppDAL.pdb" publishTime="03/28/2014 12:53:20" />
+    <file relUrl="frmPedidoLineaAprobacionResponsable.aspx" publishTime="12/18/2013 20:32:02" />
+    <file relUrl="Account/Images/headingBarBg.gif" publishTime="01/31/2014 01:17:14" />
+    <file relUrl="bin/AppDAL.pdb" publishTime="07/07/2014 15:14:32" />
     <file relUrl="frmPedidoLista.aspx" publishTime="01/01/2014 14:15:14" />
     <file relUrl="Images/del.gif" publishTime="11/28/2013 21:29:59" />
     <file relUrl="Scripts/rbtec.js" publishTime="01/07/2014 07:51:53" />
     <file relUrl="frmRecepcionInventario.aspx" publishTime="12/15/2013 22:46:11" />
+    <file relUrl="frmCotizacion.aspx" publishTime="01/16/2014 16:10:48" />
     <file relUrl="Images/drop2.gif" publishTime="12/14/2013 10:44:18" />
     <file relUrl="Images/drop1.gif" publishTime="12/14/2013 10:44:18" />
-    <file relUrl="bin/AppDAL.dll" publishTime="03/28/2014 12:53:20" />
     <file relUrl="Account/Images/del.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="frmMantProveedor.aspx" publishTime="12/29/2013 23:38:47" />
     <file relUrl="Account/Images/lightBlue_back.jpg" publishTime="01/31/2014 01:17:14" />
     <file relUrl="Scripts/jquery-1.4.1.js" publishTime="11/10/2013 22:48:58" />
     <file relUrl="frmOrdenCompra.aspx" publishTime="02/13/2014 18:32:26" />
     <file relUrl="frmIGV.aspx" publishTime="12/16/2013 10:52:12" />
-    <file relUrl="frmPreArticuloSolicitud.aspx" publishTime="01/24/2014 12:09:42" />
     <file relUrl="frmMantArticulo.aspx" publishTime="01/19/2014 13:01:19" />
     <file relUrl="frmCotizacionSolicitud.aspx" publishTime="01/04/2014 00:03:08" />
-    <file relUrl="frmPedidoPorCotizarLista.aspx" publishTime="01/04/2014 00:02:18" />
+    <file relUrl="frmParametro.aspx" publishTime="01/07/2014 22:40:23" />
     <file relUrl="frmOrdenCompraLineaAprobacionLogistica.aspx" publishTime="02/21/2014 15:42:27" />
     <file relUrl="Images/headerBg.jpg" publishTime="11/28/2013 19:59:40" />
-    <file relUrl="bin/Microsoft.Practices.ServiceLocation.pdb" publishTime="04/16/2010 13:42:32" />
+    <file relUrl="frmDespachoRecepcionLista.aspx" publishTime="12/29/2013 16:47:28" />
     <file relUrl="frmMantSede.aspx" publishTime="01/06/2014 14:13:47" />
     <file relUrl="Images/key.png" publishTime="12/05/2013 23:41:31" />
-    <file relUrl="ListadoArticulos.aspx" publishTime="01/19/2014 01:53:17" />
-    <file relUrl="Images/logorbtec.jpg" publishTime="01/20/2014 12:28:14" />
     <file relUrl="frmMantFamilia.aspx" publishTime="12/05/2013 23:34:12" />
     <file relUrl="frmOrdenCompraLineaEnvioProveedor.aspx" publishTime="01/07/2014 07:41:28" />
     <file relUrl="error.html" publishTime="02/06/2014 23:45:05" />
     <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="11/10/2013 22:48:58" />
-    <file relUrl="bin/Microsoft.Practices.Unity.Interception.pdb" publishTime="04/16/2010 13:42:32" />
+    <file relUrl="ReportePedido.aspx" publishTime="01/01/2014 21:38:19" />
     <file relUrl="frmPedidoAprobacionResponsable.aspx" publishTime="01/03/2014 23:47:11" />
     <file relUrl="Styles/Site.css" publishTime="01/14/2014 21:00:33" />
     <file relUrl="Account/Images/LOGO_COLOR_SES.png" publishTime="01/31/2014 01:17:14" />
     <file relUrl="frmPedidoLineaAprobacionLogistica.aspx" publishTime="01/14/2014 21:08:03" />
     <file relUrl="frmPreArticulo.aspx" publishTime="12/31/2013 08:16:14" />
-    <file relUrl="Site.Master" publishTime="01/31/2014 12:18:06" />
-    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Common.xml" publishTime="04/16/2010 14:11:48" />
+    <file relUrl="Site.Master" publishTime="07/08/2014 12:12:08" />
+    <file relUrl="Account/Images/toolbarbck.gif" publishTime="01/31/2014 01:17:19" />
     <file relUrl="Account/Images/drop2.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="Account/Images/close.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="frmGuiaRemisionPendienteLista.aspx" publishTime="01/12/2014 16:40:16" />
     <file relUrl="Images/firma.jpg" publishTime="01/09/2014 22:45:10" />
     <file relUrl="Account/Images/headerBg.jpg" publishTime="01/31/2014 01:17:14" />
     <file relUrl="Account/Images/thbackground.gif" publishTime="01/31/2014 01:17:19" />
-    <file relUrl="bin/AppWeb.pdb" publishTime="05/07/2014 08:27:24" />
+    <file relUrl="bin/AppWeb.pdb" publishTime="07/07/2014 15:14:35" />
     <file relUrl="About.aspx" publishTime="01/07/2014 22:20:45" />
-    <file relUrl="frmCotizacion.aspx" publishTime="01/16/2014 16:10:48" />
+    <file relUrl="ListadoArticulos.aspx" publishTime="01/19/2014 01:53:17" />
     <file relUrl="frmDespachoPedidoLista.aspx" publishTime="12/27/2013 23:17:26" />
-    <file relUrl="Account/Images/headingBarBg.gif" publishTime="01/31/2014 01:17:14" />
-    <file relUrl="bin/Microsoft.Practices.Unity.Interception.dll" publishTime="04/16/2010 13:42:32" />
+    <file relUrl="frmOrdenCompraServicio.aspx" publishTime="01/09/2014 23:06:45" />
     <file relUrl="frmDespachoPedidoInterno.aspx" publishTime="01/29/2014 16:58:47" />
     <file relUrl="Images/GrillaEliminar.gif" publishTime="12/08/2013 21:44:32" />
     <file relUrl="frmOrdenCompraEnvioProveedor.aspx" publishTime="01/03/2014 17:53:19" />
-    <file relUrl="OrdenCompra.aspx" publishTime="01/15/2014 00:12:25" />
     <file relUrl="frmOrdenCompraAprobacion.aspx" publishTime="01/16/2014 08:51:34" />
     <file relUrl="Account/Register.aspx" publishTime="11/10/2013 22:48:58" />
     <file relUrl="Images/_GrillaEliminar.gif" publishTime="11/23/2013 11:14:52" />
-    <file relUrl="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll" publishTime="04/16/2010 14:16:58" />
+    <file relUrl="frmCotizacionLista.aspx" publishTime="12/07/2013 10:23:10" />
     <file relUrl="Seguridad/frmUsuarioCambioClave.aspx" publishTime="12/05/2013 23:38:46" />
     <file relUrl="frmPedidoAprobacionLogistica.aspx" publishTime="01/03/2014 23:47:05" />
-    <file relUrl="Account/ChangePassword.aspx" publishTime="11/10/2013 22:48:58" />
+    <file relUrl="frmPedidoPorCotizarLista.aspx" publishTime="01/04/2014 00:02:18" />
     <file relUrl="frmMovimientoInventario.aspx" publishTime="03/27/2014 14:12:38" />
     <file relUrl="frmProyecto.aspx" publishTime="01/07/2014 20:23:03" />
     <file relUrl="frmPatrimonio.aspx" publishTime="12/29/2013 23:40:21" />
     <file relUrl="Images/lightBlue_back.jpg" publishTime="12/05/2013 22:50:49" />
     <file relUrl="Account/Images/firma.jpg" publishTime="01/31/2014 01:17:14" />
-    <file relUrl="frmOrdenCompraServicio.aspx" publishTime="01/09/2014 23:06:45" />
+    <file relUrl="OrdenCompra.aspx" publishTime="01/15/2014 00:12:25" />
     <file relUrl="Account/Images/Grilla.Flecha.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="Account/Images/_GrillaEliminar.gif" publishTime="01/31/2014 01:17:14" />
-    <file relUrl="bin/Microsoft.Practices.Unity.pdb" publishTime="04/16/2010 13:42:32" />
     <file relUrl="frmReportePedidos.aspx" publishTime="01/01/2014 21:33:36" />
-    <file relUrl="frmCotizacionLista.aspx" publishTime="12/07/2013 10:23:10" />
-    <file relUrl="frmPedido.aspx" publishTime="01/31/2014 02:30:44" />
+    <file relUrl="Account/ChangePassword.aspx" publishTime="11/10/2013 22:48:58" />
+    <file relUrl="frmPedido.aspx" publishTime="07/07/2014 12:37:57" />
     <file relUrl="Account/Images/left1.gif" publishTime="01/31/2014 01:17:14" />
     <file relUrl="frmDespachoRecepcion.aspx" publishTime="01/12/2014 15:53:45" />
     <file relUrl="Images/right2.gif" publishTime="12/14/2013 10:44:24" />
-    <file relUrl="frmParametro.aspx" publishTime="01/07/2014 22:40:23" />
-    <file relUrl="ReportePedido.aspx" publishTime="01/01/2014 21:38:19" />
+    <file relUrl="frmCotizacionLinea.aspx" publishTime="01/16/2014 19:12:47" />
     <file relUrl="frmGuiaRemision.aspx" publishTime="12/28/2013 02:45:39" />
     <file relUrl="Images/btn-bg1.gif" publishTime="11/28/2013 20:15:03" />
     <file relUrl="frmNivelAprobacion.aspx" publishTime="01/15/2014 16:44:30" />
-    <file relUrl="Account/Login.aspx" publishTime="01/07/2014 22:44:28" />
+    <file relUrl="Account/Login.aspx" publishTime="07/08/2014 13:27:35" />
     <file relUrl="Account/Images/right1.gif" publishTime="01/31/2014 01:17:19" />
     <file relUrl="Scripts/popcalendar.js" publishTime="12/14/2013 10:36:37" />
-    <file relUrl="frmMantUnidadMedida.aspx" publishTime="12/05/2013 23:34:54" />
+    <file relUrl="KardexArticulo.aspx" publishTime="01/06/2014 07:26:51" />
     <file relUrl="Account/ChangePasswordSuccess.aspx" publishTime="11/10/2013 22:48:58" />
     <file relUrl="Images/left1.gif" publishTime="12/14/2013 10:44:18" />
     <file relUrl="frmRecepcionServicio.aspx" publishTime="01/24/2014 03:42:34" />
     <file relUrl="Images/right1.gif" publishTime="12/14/2013 10:44:24" />
-    <file relUrl="frmDespachoRecepcionLista.aspx" publishTime="12/29/2013 16:47:28" />
+    <file relUrl="Images/logorbtec.jpg" publishTime="01/20/2014 12:28:14" />
     <file relUrl="Images/Grilla.Flecha.gif" publishTime="11/16/2013 14:21:20" />
-    <file relUrl="Account/Images/toolbarbck.gif" publishTime="01/31/2014 01:17:19" />
     <file relUrl="WebForm1.aspx" publishTime="11/10/2013 23:03:10" />
     <file relUrl="Seguridad/frmFuncionLista.aspx" publishTime="12/03/2013 23:54:31" />
     <file relUrl="frmOrdenCompraImpresion.aspx" publishTime="12/17/2013 23:53:49" />

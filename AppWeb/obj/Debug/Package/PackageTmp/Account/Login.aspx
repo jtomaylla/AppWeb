@@ -6,9 +6,9 @@
 
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
 
-<table width="100%" align="center"  background="../Images/lightBlu2e_back.jpg">
+<table width="100%" align="left">
 <tr>
-	<td align="center">
+	<td align="left">
    
     <asp:Login ID="LoginUser" runat="server" EnableViewState="false" RenderOuterTable="false" onauthenticate="LoginUser_Authenticate">
         <LayoutTemplate>

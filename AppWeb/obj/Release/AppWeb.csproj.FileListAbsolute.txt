@@ -90,13 +90,4 @@ C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\AppWeb.dll
 C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\AppWeb.pdb
 C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\AppDAL.dll
 C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\Microsoft.Practices.ServiceLocation.dll
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\Microsoft.Practices.Unity.dll
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\Microsoft.Practices.Unity.Interception.dll
 C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\AppDAL.pdb
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\Microsoft.Practices.EnterpriseLibrary.Common.pdb
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\Microsoft.Practices.ServiceLocation.pdb
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\Microsoft.Practices.Unity.pdb
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\Microsoft.Practices.Unity.Interception.pdb
