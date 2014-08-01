@@ -100,10 +100,10 @@ namespace AppWeb
         //    }
         //}
 
-        //protected void TreeView1_SelectedNodeChanged(object sender, EventArgs e)
-        //{
+        protected void TreeView1_SelectedNodeChanged(object sender, EventArgs e)
+        {
 
-        //}
+        }
 
         protected void Lista() 
         {

@@ -25,11 +25,11 @@ namespace AppWeb
             {
                 //CargarTreeView();
                 string LoginUsuario = HttpContext.Current.User.Identity.Name;
-                //TreeView1.Visible = false;
+                TreeView1.Visible = false;
                 MenuContent.Visible = false;
                 if (LoginUsuario != "")
                 {
-                    //TreeView1.Visible = true;
+                    TreeView1.Visible = true;
                     MenuContent.Visible = true;
                     MenuUsuario();
                 }

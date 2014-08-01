@@ -121,15 +121,6 @@ C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppDAL\obj\Debug\AppDAL.pdb
 C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Debug\AppDAL.dll
 C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Debug\AppDAL.pdb
 C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Debug\Microsoft.Practices.Unity.dll
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Debug\Microsoft.Practices.Unity.Interception.dll
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Debug\Microsoft.Practices.Unity.pdb
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
 C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\obj\Debug\AppDAL.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\obj\Debug\AppDAL.dll
 C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppDAL\obj\Debug\AppDAL.pdb

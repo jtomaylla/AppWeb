@@ -2,20 +2,26 @@
     CodeBehind="Login.aspx.cs" Inherits="AppWeb.Account.Login" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
+    <style type="text/css">
+        .style1
+        {
+            width: 94%;
+        }
+    </style>
 </asp:Content>
 
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
 
 <table width="100%" align="left">
 <tr>
-	<td align="left">
+	<td align="left" class="style1">
    
     <asp:Login ID="LoginUser" runat="server" EnableViewState="false" RenderOuterTable="false" onauthenticate="LoginUser_Authenticate">
         <LayoutTemplate>
 
             <div class="accountInfo">
                 <br /><br /><br /><br />
-                    <div class="cssTablaCabeceraRegistro">Ingreso</div>
+                    <div class="cssTablaCabeceraRegistro"><center>Ingreso</center></div>
                     <div class="cssTablaRegistro">
                             <table>
                                 <tr>

@@ -54,13 +54,13 @@
         <div class="main">
             <table width="100%">
                 <tr>
-                    <td style="width:350px" valign="top">
+                    <td style="width:300px" valign="top">
                         <asp:ContentPlaceHolder ID="MenuContent" runat="server">
                             <div class="cssTablaCabeceraRegistro">::Perfil/Función::</div>
                             <div class="cssTablaRegistro">
 
                                 <asp:TreeView ID="TreeView1" runat="server" 
-                                    Width="345px" onselectednodechanged="TreeView1_SelectedNodeChanged" >
+                                    Width="295px" onselectednodechanged="TreeView1_SelectedNodeChanged" >
                                 </asp:TreeView>
   
                             </div>
