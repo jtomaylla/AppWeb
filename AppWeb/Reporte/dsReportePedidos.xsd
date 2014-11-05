@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsReportePedidos" targetNamespace="http://tempuri.org/dsReportePedidos.xsd" xmlns:mstns="http://tempuri.org/dsReportePedidos.xsd" xmlns="http://tempuri.org/dsReportePedidos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsReportePedidos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsReportePedidos" msprop:Generator_UserDSName="dsReportePedidos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ReportePedidos" msprop:Generator_TableClassName="ReportePedidosDataTable" msprop:Generator_TableVarName="tableReportePedidos" msprop:Generator_RowChangedName="ReportePedidosRowChanged" msprop:Generator_TablePropName="ReportePedidos" msprop:Generator_RowDeletingName="ReportePedidosRowDeleting" msprop:Generator_RowChangingName="ReportePedidosRowChanging" msprop:Generator_RowEvHandlerName="ReportePedidosRowChangeEventHandler" msprop:Generator_RowDeletedName="ReportePedidosRowDeleted" msprop:Generator_RowClassName="ReportePedidosRow" msprop:Generator_UserTableName="ReportePedidos" msprop:Generator_RowEvArgName="ReportePedidosRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_PEDIDO" msprop:Generator_ColumnVarNameInTable="columnID_PEDIDO" msprop:Generator_ColumnPropNameInRow="ID_PEDIDO" msprop:Generator_ColumnPropNameInTable="ID_PEDIDOColumn" msprop:Generator_UserColumnName="ID_PEDIDO" type="xs:int" minOccurs="0" />
+              <xs:element name="NUMERO_PEDIDO" msprop:Generator_ColumnVarNameInTable="columnNUMERO_PEDIDO" msprop:Generator_ColumnPropNameInRow="NUMERO_PEDIDO" msprop:Generator_ColumnPropNameInTable="NUMERO_PEDIDOColumn" msprop:Generator_UserColumnName="NUMERO_PEDIDO" type="xs:int" minOccurs="0" />
+              <xs:element name="FECHA_PEDIDO" msprop:Generator_ColumnVarNameInTable="columnFECHA_PEDIDO" msprop:Generator_ColumnPropNameInRow="FECHA_PEDIDO" msprop:Generator_ColumnPropNameInTable="FECHA_PEDIDOColumn" msprop:Generator_UserColumnName="FECHA_PEDIDO" type="xs:string" minOccurs="0" />
+              <xs:element name="DESCRIPCION" msprop:Generator_ColumnVarNameInTable="columnDESCRIPCION" msprop:Generator_ColumnPropNameInRow="DESCRIPCION" msprop:Generator_ColumnPropNameInTable="DESCRIPCIONColumn" msprop:Generator_UserColumnName="DESCRIPCION" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHA_APROBACION" msprop:Generator_ColumnVarNameInTable="columnFECHA_APROBACION" msprop:Generator_ColumnPropNameInRow="FECHA_APROBACION" msprop:Generator_ColumnPropNameInTable="FECHA_APROBACIONColumn" msprop:Generator_UserColumnName="FECHA_APROBACION" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMBRE_PROYECTO" msprop:Generator_ColumnVarNameInTable="columnNOMBRE_PROYECTO" msprop:Generator_ColumnPropNameInRow="NOMBRE_PROYECTO" msprop:Generator_ColumnPropNameInTable="NOMBRE_PROYECTOColumn" msprop:Generator_UserColumnName="NOMBRE_PROYECTO" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMBRE_MONEDA" msprop:Generator_ColumnVarNameInTable="columnNOMBRE_MONEDA" msprop:Generator_ColumnPropNameInRow="NOMBRE_MONEDA" msprop:Generator_ColumnPropNameInTable="NOMBRE_MONEDAColumn" msprop:Generator_UserColumnName="NOMBRE_MONEDA" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMBRE_SOLICITANTE" msprop:Generator_ColumnVarNameInTable="columnNOMBRE_SOLICITANTE" msprop:Generator_ColumnPropNameInRow="NOMBRE_SOLICITANTE" msprop:Generator_ColumnPropNameInTable="NOMBRE_SOLICITANTEColumn" msprop:Generator_UserColumnName="NOMBRE_SOLICITANTE" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMBRE_TIPO_PEDIDO" msprop:Generator_ColumnVarNameInTable="columnNOMBRE_TIPO_PEDIDO" msprop:Generator_ColumnPropNameInRow="NOMBRE_TIPO_PEDIDO" msprop:Generator_ColumnPropNameInTable="NOMBRE_TIPO_PEDIDOColumn" msprop:Generator_UserColumnName="NOMBRE_TIPO_PEDIDO" type="xs:string" minOccurs="0" />
+              <xs:element name="ORDEN_COMPRA" msprop:Generator_ColumnVarNameInTable="columnORDEN_COMPRA" msprop:Generator_ColumnPropNameInRow="ORDEN_COMPRA" msprop:Generator_ColumnPropNameInTable="ORDEN_COMPRAColumn" msprop:Generator_UserColumnName="ORDEN_COMPRA" type="xs:int" minOccurs="0" />
+              <xs:element name="NOMBRE_ESTADO_CONTROL" msprop:Generator_ColumnVarNameInTable="columnNOMBRE_ESTADO_CONTROL" msprop:Generator_ColumnPropNameInRow="NOMBRE_ESTADO_CONTROL" msprop:Generator_ColumnPropNameInTable="NOMBRE_ESTADO_CONTROLColumn" msprop:Generator_UserColumnName="NOMBRE_ESTADO_CONTROL" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMBRE_ESTADO" msprop:Generator_ColumnVarNameInTable="columnNOMBRE_ESTADO" msprop:Generator_ColumnPropNameInRow="NOMBRE_ESTADO" msprop:Generator_ColumnPropNameInTable="NOMBRE_ESTADOColumn" msprop:Generator_UserColumnName="NOMBRE_ESTADO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -72,6 +72,7 @@
     <Compile Include="dao\compra\OrdenCompraDAO.cs" />
     <Compile Include="dao\compra\OrdenCompraLineaDAO.cs" />
     <Compile Include="dao\compra\OrdenCompraNivelAprobacionDAO.cs" />
+    <Compile Include="dao\EstadoPedidoDAO.cs" />
     <Compile Include="dao\IgvDAO.cs" />
     <Compile Include="dao\inventario\ArticuloPreDAO.cs" />
     <Compile Include="dao\inventario\InvAlmacenDAO.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="dto\compra\FormaPagoDTO.cs" />
     <Compile Include="dto\compra\OrdenCompraAprobadorDTO.cs" />
     <Compile Include="dto\compra\OrdenCompraNivelAprobacionDTO.cs" />
+    <Compile Include="dto\EstadoPedidoDTO.cs" />
     <Compile Include="dto\inventario\InvArticuloProyectoDTO.cs" />
     <Compile Include="dto\MonedaDTO.cs" />
     <Compile Include="dto\recepcion\DespachoDTO.cs" />

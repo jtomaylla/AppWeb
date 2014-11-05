@@ -92,6 +92,7 @@ namespace pe.com.sil.dal.dao
           List<OrdenCompraDTO> Lista = new List<OrdenCompraDTO>();
           Database db = DatabaseFactory.CreateDatabase("ApplicationConnectionString");
           DbCommand dbCommand = db.GetStoredProcCommand(C_LISTAR);
+          db.AddInParameter(dbCommand, "@modo", DbType.String, "0");
           using (IDataReader dr = db.ExecuteReader(dbCommand)) 
           {
               while (dr.Read())
