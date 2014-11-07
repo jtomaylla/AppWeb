@@ -17,6 +17,7 @@ namespace pe.com.sil.dal.dao
       const string C_ELIMINAR = "USP_CotizacionLinea_Eliminar";
 
       const string C_LISTAR_POR_COTIZACION = "USP_CotizacionLinea_ListarPorCotizacion";
+      const string C_LISTAR_POR_COTIZACION_PROVEEDOR = "USP_CotizacionLinea_ListarPorCotizacionProveedor";
       const string C_LISTAR_POR_CLAVE = "USP_CotizacionLinea_ListarPorClave";
       
       public List<CotizacionLineaDTO> ListarPorCotizacion(int IdCotizacion)
@@ -68,6 +69,67 @@ namespace pe.com.sil.dal.dao
                   if (dr["codigo_articulo"] != System.DBNull.Value) obj.CodigoArticulo = (string)dr["codigo_articulo"];
                   if (dr["nombre_corto_unidad_medida"] != System.DBNull.Value) obj.NombreCortoUnidadMedida = (string)dr["nombre_corto_unidad_medida"];
                   if (dr["razon_social"] != System.DBNull.Value) obj.RazonSocial = (string)dr["razon_social"];
+
+                  if (dr["DESC_ALTERNATIVA"] != System.DBNull.Value) obj.DescAlternativa = (string)dr["DESC_ALTERNATIVA"];
+
+                  Lista.Add(obj);
+              }
+          }
+          return Lista;
+      }
+
+      public List<CotizacionLineaDTO> ListarPorCotizacion(int IdCotizacion, int IdProveedor)
+      {
+          List<CotizacionLineaDTO> Lista = new List<CotizacionLineaDTO>();
+          Database db = DatabaseFactory.CreateDatabase("ApplicationConnectionString");
+          DbCommand dbCommand = db.GetStoredProcCommand(C_LISTAR_POR_COTIZACION_PROVEEDOR);
+          db.AddInParameter(dbCommand, "@id_cotizacion", DbType.Int32, IdCotizacion);
+          db.AddInParameter(dbCommand, "@id_proveedor", DbType.Int32, IdProveedor);
+          using (IDataReader dr = db.ExecuteReader(dbCommand))
+          {
+              while (dr.Read())
+              {
+                  CotizacionLineaDTO obj = new CotizacionLineaDTO();
+
+                  if (dr["id_cotizacion"] != System.DBNull.Value) obj.IdCotizacion = (int)dr["id_cotizacion"];
+                  if (dr["id_cotizacion_linea"] != System.DBNull.Value) obj.IdCotizacionLinea = (int)dr["id_cotizacion_linea"];
+                  if (dr["id_pedido_linea"] != System.DBNull.Value) obj.IdPedidoLinea = (int)dr["id_pedido_linea"];
+                  if (dr["numero_linea"] != System.DBNull.Value)
+                      obj.NumeroLinea = (int)dr["numero_linea"];
+                  if (dr["id_unidad_medida"] != System.DBNull.Value)
+                      obj.IdUnidadMedida = (int)dr["id_unidad_medida"];
+                  if (dr["id_articulo"] != System.DBNull.Value)
+                      obj.IdArticulo = (int)dr["id_articulo"];
+                  if (dr["descripcion_linea"] != System.DBNull.Value)
+                      obj.DescripcionLinea = (string)dr["descripcion_linea"];
+                  if (dr["precio"] != System.DBNull.Value)
+                      obj.Precio = (Decimal)dr["precio"];
+                  if (dr["cantidad"] != System.DBNull.Value)
+                      obj.Cantidad = (Decimal)dr["cantidad"];
+                  if (dr["importe"] != System.DBNull.Value)
+                      obj.Importe = (Decimal)dr["importe"];
+                  if (dr["flag_igv"] != System.DBNull.Value)
+                      obj.FlagIgv = (string)dr["flag_igv"];
+                  if (dr["id_proveedor_seleccionado"] != System.DBNull.Value)
+                      obj.IdProveedorSeleccionado = (int)dr["id_proveedor_seleccionado"];
+
+                  if (dr["dias_entrega"] != System.DBNull.Value)
+                      obj.DiasEntrega = (int)dr["dias_entrega"];
+
+                  if (dr["id_usuario_creacion"] != System.DBNull.Value)
+                      obj.IdUsuarioCreacion = (int)dr["id_usuario_creacion"];
+                  if (dr["fecha_creacion"] != System.DBNull.Value)
+                      obj.FechaCreacion = (DateTime)dr["fecha_creacion"];
+                  if (dr["id_usuario_modificacion"] != System.DBNull.Value)
+                      obj.IdUsuarioModificacion = (int)dr["id_usuario_modificacion"];
+                  if (dr["fecha_modificacion"] != System.DBNull.Value)
+                      obj.FechaModificacion = (DateTime)dr["fecha_modificacion"];
+
+                  if (dr["codigo_articulo"] != System.DBNull.Value) obj.CodigoArticulo = (string)dr["codigo_articulo"];
+                  if (dr["nombre_corto_unidad_medida"] != System.DBNull.Value) obj.NombreCortoUnidadMedida = (string)dr["nombre_corto_unidad_medida"];
+                  if (dr["razon_social"] != System.DBNull.Value) obj.RazonSocial = (string)dr["razon_social"];
+
+                  if (dr["DESC_ALTERNATIVA"] != System.DBNull.Value) obj.DescAlternativa = (string)dr["DESC_ALTERNATIVA"];
 
                   Lista.Add(obj);
               }
@@ -125,6 +187,8 @@ namespace pe.com.sil.dal.dao
                   if (dr["codigo_articulo"] != System.DBNull.Value) obj.CodigoArticulo = (string)dr["codigo_articulo"];
                   if (dr["nombre_corto_unidad_medida"] != System.DBNull.Value) obj.NombreCortoUnidadMedida = (string)dr["nombre_corto_unidad_medida"];
                   if (dr["razon_social"] != System.DBNull.Value) obj.RazonSocial = (string)dr["razon_social"];
+
+                  if (dr["DESC_ALTERNATIVA"] != System.DBNull.Value) obj.DescAlternativa = (string)dr["DESC_ALTERNATIVA"];
                   
               }
           }
@@ -189,6 +253,13 @@ namespace pe.com.sil.dal.dao
           else
               db.AddInParameter(dbCommand, "@fecha_modificacion", DbType.DateTime, obj.FechaModificacion);
 
+          if (string.IsNullOrEmpty(obj.DescAlternativa)) 
+          {
+              db.AddInParameter(dbCommand, "@desc_alternativa", DbType.String, null); 
+          } 
+          else {
+              db.AddInParameter(dbCommand, "@desc_alternativa", DbType.String, obj.DescAlternativa); 
+          }
           
           db.ExecuteNonQuery(dbCommand);
       }

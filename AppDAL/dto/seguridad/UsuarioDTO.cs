@@ -20,6 +20,8 @@ namespace pe.com.seg.dal.dto
       private DateTime _FechaModificacion;
       private string _UsuarioModificacion;
 
+      private string _AnulaDescarta;
+
       //Constructor
 
       public UsuarioDTO() { }
@@ -38,6 +40,12 @@ namespace pe.com.seg.dal.dto
       }
 
       //Get y Set
+      public string AnulaDescarta
+      {
+          get { return _AnulaDescarta; }
+          set { _AnulaDescarta = value; }
+      }
+
       public int IdUsuario
       {
           get { return _IdUsuario; }

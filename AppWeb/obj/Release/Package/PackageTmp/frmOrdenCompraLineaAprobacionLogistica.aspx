@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="frmOrdenCompraLineaAprobacionLogistica.aspx.cs" Inherits="AppWeb.frmOrdenCompraLineaAprobacionLogistica" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 
-<script language="javascript" src="Scripts/popcalendar.js"></script>
+<script type="text/javascript" language="javascript" src="Scripts/popcalendar.js"></script>
 
  <script type="text/javascript" language="javascript">
 
@@ -144,10 +144,10 @@
     <td>:</td>
     <td>
         <asp:TextBox ID="txtFechaEntrega" runat="server" MaxLength="10" Width="100px"></asp:TextBox>
-        <script language="javascript">
+        <script type="text/javascript" language="javascript">
 		<!--
             if (!document.layers) {
-                document.write("<input type=button onclick='popUpCalendar(this, MainContent_txtFechaEntrega, \"dd/mm/yyyy\")'  name='select1' value='...' style='font-size:11px'>")
+                document.write("<input type='button' onclick='popUpCalendar(this, MainContent_txtFechaEntrega, \"dd/mm/yyyy\")'  name='select1' value='...' style='font-size:11px'>")
             }
 		//-->
 		</script>

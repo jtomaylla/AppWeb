@@ -72,6 +72,9 @@ namespace pe.com.sil.dal.dao
                   if (dr["ruc"] != System.DBNull.Value)
                       obj.Ruc = (string)dr["ruc"];
 
+                  if (dr["Desc_Alternativa"] != System.DBNull.Value)
+                      obj.DescAlternativo = (string)dr["Desc_Alternativa"];
+
                   Lista.Add(obj);
 
               }
@@ -133,6 +136,9 @@ namespace pe.com.sil.dal.dao
                   if (dr["ruc"] != System.DBNull.Value)
                       obj.Ruc = (string)dr["ruc"];
 
+                  if (dr["Desc_Alternativa"] != System.DBNull.Value)
+                      obj.DescAlternativo = (string)dr["Desc_Alternativa"];
+
               }
           }
           return obj;
@@ -172,6 +178,11 @@ namespace pe.com.sil.dal.dao
               db.AddInParameter(dbCommand, "@fecha_modificacion", DbType.DateTime, null);
           else
               db.AddInParameter(dbCommand, "@fecha_modificacion", DbType.DateTime, obj.FechaModificacion);
+
+          if (string.IsNullOrEmpty(obj.DescAlternativo))
+              db.AddInParameter(dbCommand, "@nomb_alternativo", DbType.String, null);
+          else
+              db.AddInParameter(dbCommand, "@nomb_alternativo", DbType.String, obj.DescAlternativo);
           
           db.ExecuteNonQuery(dbCommand);
           return 0;

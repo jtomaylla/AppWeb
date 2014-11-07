@@ -118,7 +118,6 @@
     Direccion de Envio:<br />
     <asp:DropDownList ID="ddlDireccion" runat="server" Width="360px"></asp:DropDownList>
     <br />
-
     <asp:Button ID="btnAprobar" runat="server" Text="Registrar envío de O/C" CssClass="cssButton" 
         onclick="btnAprobar_Click" />
 

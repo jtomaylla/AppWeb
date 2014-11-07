@@ -79,17 +79,24 @@
         autogeneratecolumns="False"
         CssClass="gridview"
         PagerStyle-CssClass="gridview_pager" 
-        AlternatingRowStyle-CssClass="gridview_alter"
-       
+        AlternatingRowStyle-CssClass="gridview_alter" 
+        DataKeyNames="IdPedidoDetalle"
 >
      <AlternatingRowStyle CssClass="gridview_alter"></AlternatingRowStyle>
     <Columns>
         <asp:BoundField ReadOnly="True" DataField="NumeroLinea" HeaderText="Linea" ItemStyle-Width="50px"></asp:BoundField>
         <asp:BoundField ReadOnly="True" DataField="CodigoArticulo" HeaderText="Código" ItemStyle-Width="100px"></asp:BoundField>
         <asp:BoundField ReadOnly="True" DataField="DescripcionLinea" HeaderText="Descripción" ItemStyle-Width="500px"></asp:BoundField>
+        <asp:BoundField ReadOnly="True" DataField="Modelo" HeaderText="Modelo" ItemStyle-Width="120px"></asp:BoundField>
+        <asp:BoundField ReadOnly="True" DataField="Marca" HeaderText="Marca" ItemStyle-Width="120px"></asp:BoundField>
         <asp:BoundField ReadOnly="True" DataField="Cantidad" HeaderText="Cantidad" ItemStyle-Width="100px"></asp:BoundField>
         <asp:BoundField ReadOnly="True" DataField="PrecioReferencial" HeaderText="Precio" ItemStyle-Width="100px"></asp:BoundField>
         <asp:BoundField ReadOnly="True" DataField="Importe" HeaderText="Importe" ItemStyle-Width="100px"></asp:BoundField>
+        <asp:TemplateField>
+            <ItemTemplate>
+                <asp:CheckBox ID="chkpedido" runat="server" Text="" />
+            </ItemTemplate>
+        </asp:TemplateField>
     </Columns>
     <PagerStyle CssClass="gridview_pager"></PagerStyle>
     </asp:gridview> 

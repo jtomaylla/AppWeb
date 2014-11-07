@@ -55,6 +55,7 @@ namespace pe.com.rbtec.web
         static public string PEDIDO_ESTADO_CONTROL_CERRADO = "9";
         static public string PEDIDO_ESTADO_EN_DESPACHO = "10";
         static public string PEDIDO_ESTADO_DESPACHADO = "11";
+        static public string PEDIDO_ESTADO_CONTROL_COTIZADO_PARCIALMENTE = "13";
 
         //Transaccion de Inv
         static public string TRXINV_INGRESO_RECEPCION_OC = "2";

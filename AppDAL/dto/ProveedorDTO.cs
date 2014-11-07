@@ -5,7 +5,7 @@ using System.Text;
 
 namespace pe.com.sil.dal.dto
 {
-    public class ProveedorDTO
+    public class ProveedorDTO:IEquatable<ProveedorDTO>
     {
         private int _IdProveedor;
         private string _RazonSocial;
@@ -132,6 +132,23 @@ namespace pe.com.sil.dal.dto
         {
             get { return _UsuarioModificacion; }
             set { _UsuarioModificacion = value; }
+        }
+
+        /*para la comparacion y funcione el metodo distinct*/
+
+        public bool Equals(ProveedorDTO other)
+        {
+            if (Object.ReferenceEquals(other, null)) return false;
+            if (Object.ReferenceEquals(this, other)) return true;
+
+            return this.IdProveedor.Equals(other.IdProveedor);
+        }
+
+        public override int GetHashCode()
+        {
+            int hashDescription = this.IdProveedor == null ? 0 : this.IdProveedor.GetHashCode();
+
+            return hashDescription;
         }
     }
 }

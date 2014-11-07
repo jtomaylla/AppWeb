@@ -26,6 +26,7 @@ namespace AppWeb
         {
 
             string strFormatoReporte = "PDF";  //PDF, XLS, DOC
+            strFormatoReporte = Session["impresion"].ToString();
 
             if (Session["FormatoReporte"] != null) strFormatoReporte = Session["FormatoReporte"].ToString();
 

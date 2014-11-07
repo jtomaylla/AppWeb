@@ -34,7 +34,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -46,27 +46,45 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AjaxControlToolkit, Version=4.1.7.1005, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.1213, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+      <HintPath>..\packages\AjaxControlToolkit.7.1213\lib\40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>..\packages\AjaxMin.4.97.4951.28483\lib\net40\AjaxMin.dll</HintPath>
     </Reference>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="GroupGridViewCtrl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\GroupGridViewCtrl.dll</HintPath>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net40\HtmlAgilityPack.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm">
+      <HintPath>..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData">
+      <HintPath>..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration">
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.1.8.0.0\lib\net35-full\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage">
+      <HintPath>..\packages\WindowsAzure.Storage.2.1.0.3\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Spatial">
+      <HintPath>..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -106,10 +124,6 @@
     <Content Include="Account\Images\_GrillaEliminar.gif" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
-    <Content Include="frmPedidoAprobacionResponsable.aspx" />
-    <Content Include="frmReportePedidos1.aspx" />
-    <Content Include="rptReportePedidos1.aspx" />
-    <Content Include="frmPedidoLista1.aspx" />
     <Content Include="error.html" />
     <Content Include="frmCotizacion.aspx" />
     <Content Include="frmCotizacionEnProceso.aspx" />
@@ -148,6 +162,7 @@
     <Content Include="frmPatrimonio.aspx" />
     <Content Include="frmPedido.aspx" />
     <Content Include="frmPedidoAprobacionLogistica.aspx" />
+    <Content Include="frmPedidoAprobacionResponsable.aspx" />
     <Content Include="frmPedidoCodigoPresupuesto.aspx" />
     <Content Include="frmPedidoConsulta.aspx" />
     <Content Include="frmPedidoInterno.aspx" />
@@ -189,7 +204,6 @@
     <Content Include="ListadoArticulos.aspx" />
     <Content Include="OrdenCompra.aspx" />
     <Content Include="ReportePedido.aspx" />
-    <Content Include="Scripts\jquery-1.4.2.min.js" />
     <Content Include="Scripts\popcalendar.js" />
     <Content Include="Scripts\rbtec.js" />
     <Content Include="Seguridad\frmFuncionLista.aspx" />
@@ -254,34 +268,6 @@
     <Compile Include="AppConfig.cs" />
     <Compile Include="AppConstantes.cs" />
     <Compile Include="AppUtilidad.cs" />
-    <Compile Include="frmPedidoAprobacionResponsable.aspx.cs">
-      <DependentUpon>frmPedidoAprobacionResponsable.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="frmPedidoAprobacionResponsable.aspx.designer.cs">
-      <DependentUpon>frmPedidoAprobacionResponsable.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="frmReportePedidos1.aspx.cs">
-      <DependentUpon>frmReportePedidos1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="frmReportePedidos1.aspx.designer.cs">
-      <DependentUpon>frmReportePedidos1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="rptReportePedidos1.aspx.cs">
-      <DependentUpon>rptReportePedidos1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="rptReportePedidos1.aspx.designer.cs">
-      <DependentUpon>rptReportePedidos1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="frmPedidoLista1.aspx.cs">
-      <DependentUpon>frmPedidoLista1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="frmPedidoLista1.aspx.designer.cs">
-      <DependentUpon>frmPedidoLista1.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -548,6 +534,13 @@
     <Compile Include="frmPedidoAprobacionLogistica.aspx.designer.cs">
       <DependentUpon>frmPedidoAprobacionLogistica.aspx</DependentUpon>
     </Compile>
+    <Compile Include="frmPedidoAprobacionResponsable.aspx.cs">
+      <DependentUpon>frmPedidoAprobacionResponsable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPedidoAprobacionResponsable.aspx.designer.cs">
+      <DependentUpon>frmPedidoAprobacionResponsable.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmPedidoCodigoPresupuesto.aspx.cs">
       <DependentUpon>frmPedidoCodigoPresupuesto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -683,10 +676,10 @@
     <Compile Include="ListadoArticulos.aspx.designer.cs">
       <DependentUpon>ListadoArticulos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="rptListadoArticulos.cs">
+    <Compile Include="ListadoArticulos.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>rptListadoArticulos.rpt</DependentUpon>
+      <DependentUpon>ListadoArticulos.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="OrdenCompra.aspx.cs">
@@ -703,11 +696,6 @@
     </Compile>
     <Compile Include="ReportePedido.aspx.designer.cs">
       <DependentUpon>ReportePedido.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Reporte\dsReportePedidos.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dsReportePedidos.xsd</DependentUpon>
     </Compile>
     <Compile Include="Reporte\dsReportes.cs">
       <DependentUpon>dsReportes.xsd</DependentUpon>
@@ -740,12 +728,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptPedido.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="rptReportePedidos.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>rptReportePedidos.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Seguridad\frmFuncionLista.aspx.cs">
@@ -812,18 +794,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\Profile1.pubxml" />
-    <None Include="Reporte\dsReportePedidos.xsc">
-      <DependentUpon>dsReportePedidos.xsd</DependentUpon>
-    </None>
-    <None Include="Reporte\dsReportePedidos.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dsReportePedidos.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Reporte\dsReportePedidos.xss">
-      <DependentUpon>dsReportePedidos.xsd</DependentUpon>
-    </None>
     <None Include="Reporte\dsReportes.xsc">
       <DependentUpon>dsReportes.xsd</DependentUpon>
     </None>
@@ -841,9 +813,9 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>KardexArticulo.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="rptListadoArticulos.rpt">
+    <EmbeddedResource Include="ListadoArticulos.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rptListadoArticulos.cs</LastGenOutput>
+      <LastGenOutput>ListadoArticulos.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="rptGuiaRemision.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -860,10 +832,6 @@
     <EmbeddedResource Include="rptPedido.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptPedido.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="rptReportePedidos.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rptReportePedidos.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -882,7 +850,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>5240</DevelopmentServerPort>
+          <DevelopmentServerPort>48550</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

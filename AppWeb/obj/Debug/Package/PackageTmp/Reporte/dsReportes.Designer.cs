@@ -910,6 +910,8 @@ namespace AppWeb.Reporte {
             
             private global::System.Data.DataColumn columnNombreMoneda;
             
+            private global::System.Data.DataColumn columnRedondeo;
+            
             private global::System.Data.DataColumn columnDireccionEntrega;
             
             private global::System.Data.DataColumn columnComentarioProveedor;
@@ -1141,6 +1143,14 @@ namespace AppWeb.Reporte {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RedondeoColumn {
+                get {
+                    return this.columnRedondeo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn DireccionEntregaColumn {
                 get {
                     return this.columnDireccionEntrega;
@@ -1217,6 +1227,7 @@ namespace AppWeb.Reporte {
                         string FacturarRuc, 
                         string FacturarDireccion, 
                         string NombreMoneda, 
+                        decimal Redondeo, 
                         string DireccionEntrega, 
                         string ComentarioProveedor) {
                 OrdenCompraRow rowOrdenCompraRow = ((OrdenCompraRow)(this.NewRow()));
@@ -1245,6 +1256,7 @@ namespace AppWeb.Reporte {
                         FacturarRuc,
                         FacturarDireccion,
                         NombreMoneda,
+                        Redondeo,
                         DireccionEntrega,
                         ComentarioProveedor};
                 rowOrdenCompraRow.ItemArray = columnValuesArray;
@@ -1293,6 +1305,7 @@ namespace AppWeb.Reporte {
                 this.columnFacturarRuc = base.Columns["FacturarRuc"];
                 this.columnFacturarDireccion = base.Columns["FacturarDireccion"];
                 this.columnNombreMoneda = base.Columns["NombreMoneda"];
+                this.columnRedondeo = base.Columns["Redondeo"];
                 this.columnDireccionEntrega = base.Columns["DireccionEntrega"];
                 this.columnComentarioProveedor = base.Columns["ComentarioProveedor"];
             }
@@ -1348,6 +1361,8 @@ namespace AppWeb.Reporte {
                 base.Columns.Add(this.columnFacturarDireccion);
                 this.columnNombreMoneda = new global::System.Data.DataColumn("NombreMoneda", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNombreMoneda);
+                this.columnRedondeo = new global::System.Data.DataColumn("Redondeo", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRedondeo);
                 this.columnDireccionEntrega = new global::System.Data.DataColumn("DireccionEntrega", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDireccionEntrega);
                 this.columnComentarioProveedor = new global::System.Data.DataColumn("ComentarioProveedor", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1501,6 +1516,8 @@ namespace AppWeb.Reporte {
             
             private global::System.Data.DataColumn columnImporte;
             
+            private global::System.Data.DataColumn columnDescAlternativa;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public OrdenCompraLineasDataTable() {
@@ -1600,6 +1617,14 @@ namespace AppWeb.Reporte {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DescAlternativaColumn {
+                get {
+                    return this.columnDescAlternativa;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1635,7 +1660,7 @@ namespace AppWeb.Reporte {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public OrdenCompraLineasRow AddOrdenCompraLineasRow(int IdReporte, int IdOrdenCompra, int Linea, decimal Cantidad, string UnidadMedida, string DescripcionLinea, decimal PrecioUnitario, decimal Importe) {
+            public OrdenCompraLineasRow AddOrdenCompraLineasRow(int IdReporte, int IdOrdenCompra, int Linea, decimal Cantidad, string UnidadMedida, string DescripcionLinea, decimal PrecioUnitario, decimal Importe, string DescAlternativa) {
                 OrdenCompraLineasRow rowOrdenCompraLineasRow = ((OrdenCompraLineasRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         IdReporte,
@@ -1645,7 +1670,8 @@ namespace AppWeb.Reporte {
                         UnidadMedida,
                         DescripcionLinea,
                         PrecioUnitario,
-                        Importe};
+                        Importe,
+                        DescAlternativa};
                 rowOrdenCompraLineasRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowOrdenCompraLineasRow);
                 return rowOrdenCompraLineasRow;
@@ -1676,6 +1702,7 @@ namespace AppWeb.Reporte {
                 this.columnDescripcionLinea = base.Columns["DescripcionLinea"];
                 this.columnPrecioUnitario = base.Columns["PrecioUnitario"];
                 this.columnImporte = base.Columns["Importe"];
+                this.columnDescAlternativa = base.Columns["DescAlternativa"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1697,6 +1724,8 @@ namespace AppWeb.Reporte {
                 base.Columns.Add(this.columnPrecioUnitario);
                 this.columnImporte = new global::System.Data.DataColumn("Importe", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnImporte);
+                this.columnDescAlternativa = new global::System.Data.DataColumn("DescAlternativa", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDescAlternativa);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4499,6 +4528,22 @@ namespace AppWeb.Reporte {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal Redondeo {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableOrdenCompra.RedondeoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Redondeo\' de la tabla \'OrdenCompra\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableOrdenCompra.RedondeoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string DireccionEntrega {
                 get {
                     try {
@@ -4820,6 +4865,18 @@ namespace AppWeb.Reporte {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRedondeoNull() {
+                return this.IsNull(this.tableOrdenCompra.RedondeoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRedondeoNull() {
+                this[this.tableOrdenCompra.RedondeoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsDireccionEntregaNull() {
                 return this.IsNull(this.tableOrdenCompra.DireccionEntregaColumn);
             }
@@ -4990,6 +5047,23 @@ namespace AppWeb.Reporte {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DescAlternativa {
+                get {
+                    try {
+                        return ((string)(this[this.tableOrdenCompraLineas.DescAlternativaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DescAlternativa\' de la tabla \'OrdenCompraLineas\' es DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableOrdenCompraLineas.DescAlternativaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsIdReporteNull() {
                 return this.IsNull(this.tableOrdenCompraLineas.IdReporteColumn);
             }
@@ -5082,6 +5156,18 @@ namespace AppWeb.Reporte {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetImporteNull() {
                 this[this.tableOrdenCompraLineas.ImporteColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDescAlternativaNull() {
+                return this.IsNull(this.tableOrdenCompraLineas.DescAlternativaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDescAlternativaNull() {
+                this[this.tableOrdenCompraLineas.DescAlternativaColumn] = global::System.Convert.DBNull;
             }
         }
         

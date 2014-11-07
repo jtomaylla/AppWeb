@@ -776,6 +776,7 @@ namespace AppWeb
                     this.btnAgregarLinea.Visible = false;
                     this.btnEnviarAprobar.Visible = false;
 
+                    //Response.Redirect("frmPedidoLista.aspx");
                     Response.Redirect("frmPedidoAprobacionResponsable.aspx");
                 }
                 else
@@ -800,7 +801,7 @@ namespace AppWeb
             String strBusqueda = txtDescripcionLinea.Text;
             // agregado x jtomaylla
             //List<ArticuloDTO> articulos = objArticuloDAO.ListarBusquedaPorProyecto(strBusqueda, Convert.ToInt32(this.ddlProyecto.SelectedValue));
-            List<ArticuloDTO> articulos = objArticuloDAO.ListarBusqueda("0",strBusqueda);
+            List<ArticuloDTO> articulos = objArticuloDAO.ListarBusqueda("0", strBusqueda);
             //
             this.gvLista.DataSource = articulos;
             this.gvLista.DataBind();
@@ -853,6 +854,7 @@ namespace AppWeb
 
             objPedidoDAO.Actualizar(objPedidoDTO);
 
+            //Response.Redirect("frmPedidoLista.aspx");
             Response.Redirect("frmPedidoAprobacionResponsable.aspx");
 
             

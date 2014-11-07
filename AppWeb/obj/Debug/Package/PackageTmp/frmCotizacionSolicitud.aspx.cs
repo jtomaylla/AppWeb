@@ -98,12 +98,46 @@ namespace AppWeb
 
         protected void btnCotizar_Click(object sender, EventArgs e)
         {
-            int IdCotizacion;
-            IdCotizacion = objCotizacionDAO.Generar(Convert.ToInt32(this.txtIdPedido.Text), Convert.ToInt32(this.txtIdUsuario.Text) );
             
+            List<string> lista_indices = new List<string>();
+            foreach (GridViewRow row in gvPedidoLinea.Rows)
+            {
+                DataKey dKey = gvPedidoLinea.DataKeys[row.RowIndex];
+                CheckBox chkseleccion = (CheckBox)row.Cells[8].FindControl("chkpedido");
+
+                if (chkseleccion.Checked)
+                {
+                    lista_indices.Add(dKey[0].ToString());
+                }
+
+            }
+
+            if (lista_indices.Count == 0)
+            {
+                string script = @"<script type='text/javascript'>alert('Seleccione una linea de pedido');</script>";
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "Alerta", script, false);
+                return;
+            }
+
+            string nuevacadena;
+            nuevacadena = string.Join("|",lista_indices.ToArray());
+
+            int IdCotizacion;
+            IdCotizacion = objCotizacionDAO.Generar(Convert.ToInt32(this.txtIdPedido.Text), Convert.ToInt32(this.txtIdUsuario.Text), nuevacadena);//agregado parametro indices 280814 CBM
+
             PedidoDTO objPedidoDTO = objPedidoDAO.ListarPorClave(Convert.ToInt32(this.txtIdPedido.Text));
-            objPedidoDTO.EstadoControl = AppConstantes.PEDIDO_ESTADO_CONTROL_COTIZADO;
+
+            if (lista_indices.Count == gvPedidoLinea.Rows.Count)
+            {
+                objPedidoDTO.EstadoControl = AppConstantes.PEDIDO_ESTADO_CONTROL_COTIZADO;
+            }
+            else
+            {
+                objPedidoDTO.EstadoControl = AppConstantes.PEDIDO_ESTADO_CONTROL_COTIZADO_PARCIALMENTE;
+            }
+
             objPedidoDAO.Actualizar(objPedidoDTO);
+            
 
             Session.Add("ID_COTIZACION", IdCotizacion);
             Response.Redirect("frmCotizacion.aspx");

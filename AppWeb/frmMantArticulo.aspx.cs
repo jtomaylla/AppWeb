@@ -159,6 +159,10 @@ namespace AppWeb
                         if (Convert.ToString(li_item.Value) == obj.IdFamilia.ToString())
                             li_item.Selected = true;
                     }
+                    
+
+                    //ddlClase.SelectedValue = obj.IdClase.ToString();
+                    //ddlFamilia.SelectedValue = obj.IdFamilia.ToString();
 
                     //foreach (ListItem li_item in this.ddlProyecto.Items)
                     //{
@@ -277,6 +281,7 @@ namespace AppWeb
             obj.Codigo = this.txtCodigoArticulo.Text;
             obj.IdClase = int.Parse(ddlClase.SelectedValue.ToString());
             obj.IdFamilia = int.Parse(ddlFamilia.SelectedValue.ToString());
+            obj.IdUnidadMedida = int.Parse(ddlUnidad.SelectedValue.ToString());
             //obj.IdProyecto = int.Parse(ddlProyecto.SelectedValue.ToString());
             
             if (this.txtPrecio.Text.Length>0)
@@ -327,6 +332,7 @@ namespace AppWeb
             obj.CodigoArticulo = this.txtCodigoArticulo.Text;
             obj.Descripcion = this.txtDescripcion.Text;
             obj.Codigo = this.txtCodigoArticulo.Text;
+            obj.IdUnidadMedida = int.Parse(this.ddlUnidad.SelectedValue.ToString());
             obj.IdClase = int.Parse(ddlClase.SelectedValue.ToString());
             obj.IdFamilia = int.Parse(ddlFamilia.SelectedValue.ToString());
             //obj.IdProyecto = int.Parse(ddlProyecto.SelectedValue.ToString());

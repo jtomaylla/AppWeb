@@ -23,8 +23,7 @@ namespace AppWeb
         CotizacionDAO objCotizacionDAO = new CotizacionDAO();
         PedidoDAO objPedidoDAO = new PedidoDAO();
         FormaPagoDAO objFormaPagoDAO = new FormaPagoDAO();
-
-        SedeDAO objSedeDAO = new SedeDAO();
+                SedeDAO objSedeDAO = new SedeDAO();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -56,6 +55,7 @@ namespace AppWeb
             {
                 throw (err);
             }
+            
             int IdOrdenCompra;
 
             if (Session["ID_ORDEN_COMPRA"] == null)

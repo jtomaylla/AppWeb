@@ -276,6 +276,9 @@ namespace pe.com.sil.dal.dao
                   if (dr["nombre_unidad_medida"] != System.DBNull.Value)
                       obj.NombreUnidadMedida = (string)dr["nombre_unidad_medida"];
 
+                  if (dr["NOMBRE_CLASE"] != System.DBNull.Value)
+                      obj.NombreClase = (string)dr["NOMBRE_CLASE"];
+
                   
                   Lista.Add(obj);
               }

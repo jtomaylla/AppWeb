@@ -20,6 +20,9 @@ namespace pe.com.sil.dal.dao
       const string C_GENERAR = "USP_Cotizacion_Generar";
       const string C_LISTAR_EN_PROCESO = "USP_Cotizacion_ListarEnProceso";
 
+      const string C_USP_AGREGAR_REDONDEO = "USP_AGREGAR_REDONDEO";
+      const string C_USP_ELIMINAR_REDONDEO = "USP_ELIMINAR_REDONDEO";
+
       public List<CotizacionDTO> Listar()
       {
           List<CotizacionDTO> Lista = new List<CotizacionDTO>();
@@ -172,6 +175,23 @@ namespace pe.com.sil.dal.dao
           return id;
       }
 
+      public void AgregarRedondeo(int IdCotizacion, int IdUsuario)
+      {
+          Database db = DatabaseFactory.CreateDatabase("ApplicationConnectionString");
+          DbCommand dbCommand = db.GetStoredProcCommand(C_USP_AGREGAR_REDONDEO);
+          db.AddInParameter(dbCommand, "@IDCOTIZACION", DbType.Int32, IdCotizacion);
+          db.AddInParameter(dbCommand, "@IDUSUARIO", DbType.Int32, IdUsuario);
+          db.ExecuteNonQuery(dbCommand);
+      }
+
+      public void EliminarRedondeo(int IdCotizacion)
+      {
+          Database db = DatabaseFactory.CreateDatabase("ApplicationConnectionString");
+          DbCommand dbCommand = db.GetStoredProcCommand(C_USP_ELIMINAR_REDONDEO);
+          db.AddInParameter(dbCommand, "@IDCOTIZACION", DbType.Int32, IdCotizacion);          
+          db.ExecuteNonQuery(dbCommand);
+      }
+
       public void Actualizar(CotizacionDTO obj)
       {
           Database db = DatabaseFactory.CreateDatabase("ApplicationConnectionString");
@@ -197,12 +217,13 @@ namespace pe.com.sil.dal.dao
           db.ExecuteNonQuery(dbCommand);
       }
 
-      public int Generar(int IdPedido, int IdUsuarioCreacion)
+      public int Generar(int IdPedido, int IdUsuarioCreacion, string array_de_indices)
       {
           Database db = DatabaseFactory.CreateDatabase("ApplicationConnectionString");
           DbCommand dbCommand = db.GetStoredProcCommand(C_GENERAR);
           db.AddInParameter(dbCommand, "@id_pedido", DbType.Int32, IdPedido);
           db.AddInParameter(dbCommand, "@id_usuario_creacion", DbType.Int32, IdUsuarioCreacion);
+          db.AddInParameter(dbCommand, "@array_detallepedidos", DbType.String, array_de_indices);
           int id = Convert.ToInt32(db.ExecuteScalar(dbCommand));
           return id;
       }

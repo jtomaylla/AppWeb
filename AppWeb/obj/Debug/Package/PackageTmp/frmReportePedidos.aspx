@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="frmReportePedidos.aspx.cs" Inherits="AppWeb.frmReportePedidos" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <script type="text/javascript" language="javascript" src="Scripts/popcalendar.js"></script>
+    <script type="text/javascript" language=javascript src="Scripts/popcalendar.js"></script>
 
     <script type="text/javascript" language="javascript">
 
@@ -87,12 +87,6 @@
     <td>Proyecto</td>
     <td>:</td>
     <td><asp:DropDownList ID="ddlProyecto" runat="server"></asp:DropDownList>
-    </td>
-</tr>
-<tr>
-    <td>Estado del Pedido</td>
-    <td>:</td>
-    <td><asp:DropDownList ID="ddlEstadoPedido" runat="server"></asp:DropDownList>
     </td>
 </tr>
 </table>

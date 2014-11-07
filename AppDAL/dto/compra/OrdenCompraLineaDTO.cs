@@ -28,11 +28,15 @@ namespace pe.com.sil.dal.dto
       private int _IdUsuarioCreacion;
       private DateTime _FechaModificacion;
       private int _IdUsuarioModificacion;
+      private string _DescAlternativo;
 
 	  //Extendido
       private string _CodigoArticulo;
       private string _DescripcionArticulo;
       private string _NombreUnidadMedida;
+
+      private string _Modelo;
+      private string _Marca;
 
       //Constructor
 
@@ -59,6 +63,25 @@ namespace pe.com.sil.dal.dto
       }
 
       //Get y Set
+
+      public string Marca
+      {
+          get { return _Marca; }
+          set { _Marca = value; }
+      }
+
+      public string Modelo
+      {
+          get { return _Modelo; }
+          set { _Modelo = value; }
+      }
+
+      public string DescAlternativo
+      {
+          get { return _DescAlternativo; }
+          set { _DescAlternativo = value; }
+      }
+
       public int IdOrdenCompra
       {
           get { return _IdOrdenCompra; }

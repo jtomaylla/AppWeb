@@ -30,6 +30,9 @@ namespace pe.com.sil.dal.dto
       private string _EstadoPedido;
       private Decimal _CantidadDespacho;
 
+      private string _Marca;
+      private string _Modelo;
+
       //Extendido
       private string _CodigoArticulo;
       private string _NombreUnidadMedida;
@@ -62,6 +65,19 @@ namespace pe.com.sil.dal.dto
       }
 
       //Get y Set
+
+      public string Marca
+      {
+          get { return _Marca; }
+          set { _Marca = value; }
+      }
+
+      public string Modelo
+      {
+          get { return _Modelo; }
+          set { _Modelo = value; }
+      }
+
       public int IdPedidoDetalle
       {
           get { return _IdPedidoDetalle; }

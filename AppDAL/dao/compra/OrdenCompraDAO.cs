@@ -24,6 +24,10 @@ namespace pe.com.sil.dal.dao
       const string C_LISTAR_APROBACION_LOGISTICA = "USP_OrdenCompra_ListarAprobacionLogistica";
       const string C_LISTAR_ENVIO_PROVEEDOR = "USP_OrdenCompra_ListarEnvioProveedor";
 
+      const string C_USP_U_AnularOC = "USP_U_AnularOC";
+      const string C_USP_DESCARTAR_OC = "USP_DESCARTAR_OC";
+
+
       public List<OrdenCompraDTO> ListarPendientesRecepcion()
       {
           List<OrdenCompraDTO> Lista = new List<OrdenCompraDTO>();
@@ -87,12 +91,12 @@ namespace pe.com.sil.dal.dao
           return Lista;
       }
       
-      public List<OrdenCompraDTO> Listar()
+      public List<OrdenCompraDTO> Listar(string modo)
       {
           List<OrdenCompraDTO> Lista = new List<OrdenCompraDTO>();
           Database db = DatabaseFactory.CreateDatabase("ApplicationConnectionString");
           DbCommand dbCommand = db.GetStoredProcCommand(C_LISTAR);
-          db.AddInParameter(dbCommand, "@modo", DbType.String, "0");
+          db.AddInParameter(dbCommand, "@modo", DbType.String, modo);
           using (IDataReader dr = db.ExecuteReader(dbCommand)) 
           {
               while (dr.Read())
@@ -138,6 +142,10 @@ namespace pe.com.sil.dal.dao
                   if (dr["nombre_tipo_orden_compra"] != System.DBNull.Value) obj.NombreTipoOrdenCompra = (string)dr["nombre_tipo_orden_compra"];
 
                   if (dr["flag_igv"] != System.DBNull.Value) obj.FlagIGV = (string)dr["flag_igv"];
+
+                  if (dr["FECHA_ANULACION"] != System.DBNull.Value) obj.FechaAnula = (DateTime)dr["Fecha_anulacion"];
+                  if (dr["ID_USUARIO_ANULACION"] != System.DBNull.Value) obj.IdUsuarioAnulacion = (string)dr["ID_USUARIO_ANULACION"];
+                  if (dr["motivo_anula"] != System.DBNull.Value) obj.MotivoAnula = (string)dr["motivo_anula"];
 
                   //if (dr["NRO_COTIZ_PROV"] != System.DBNull.Value) obj.NroCotizProv = (string)dr["NRO_COTIZ_PROV"];
 
@@ -424,9 +432,35 @@ namespace pe.com.sil.dal.dao
 
                   if (dr["NRO_COTIZ_PROV"] != System.DBNull.Value) obj.NroCotizProv = (string)dr["NRO_COTIZ_PROV"];
 
+                  if (dr["Redondeo"] != System.DBNull.Value) obj.Redondeo = (Decimal)dr["Redondeo"];
+
               }
           }
           return obj;
+      }
+
+      public int Anular(int idOrdenCompra, string motivo, int usuario_anula)
+      {
+          Database db = DatabaseFactory.CreateDatabase("ApplicationConnectionString");
+          DbCommand dbCommand = db.GetStoredProcCommand(C_USP_U_AnularOC);
+          db.AddInParameter(dbCommand, "@id_ordencompra", DbType.Int32, idOrdenCompra);
+          db.AddInParameter(dbCommand, "@motivo", DbType.String, motivo);
+          //db.AddInParameter(dbCommand, "@fecha_anula", DbType.DateTime, fecha_anula);
+          db.AddInParameter(dbCommand, "@id_usuario", DbType.Int32, usuario_anula);
+          int retorno = db.ExecuteNonQuery(dbCommand);
+          return retorno;
+      }
+
+      public int Descartar(int idOrdenCompra, string motivo, int usuario_anula)
+      {
+          Database db = DatabaseFactory.CreateDatabase("ApplicationConnectionString");
+          DbCommand dbCommand = db.GetStoredProcCommand(C_USP_DESCARTAR_OC);
+          db.AddInParameter(dbCommand, "@id_ordencompra", DbType.Int32, idOrdenCompra);
+          db.AddInParameter(dbCommand, "@motivo", DbType.String, motivo);
+          //db.AddInParameter(dbCommand, "@fecha_anula", DbType.DateTime, fecha_anula);
+          db.AddInParameter(dbCommand, "@id_usuario", DbType.Int32, usuario_anula);
+          int retorno = db.ExecuteNonQuery(dbCommand);
+          return retorno;
       }
 
       public int Generar(int IdCotizacion, int IdUsuarioCreacion)

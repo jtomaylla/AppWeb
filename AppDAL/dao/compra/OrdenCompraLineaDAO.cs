@@ -17,6 +17,7 @@ namespace pe.com.sil.dal.dao
       const string C_ELIMINAR = "USP_OrdenCompraLinea_Eliminar";
       const string C_LISTAR_POR_CLAVE = "USP_OrdenCompraLinea_ListarPorClave";
       const string C_LISTAR_PENDIENTE_RECEPCION = "USP_OrdenCompraLinea_RecepcionListar";
+      const string C_USP_UPD_ORDENCOMPRA_PU = "USP_UPD_ORDENCOMPRA_PU";
       
       public List<OrdenCompraLineaDTO> Listar(int IdOrdenCompra)
       {
@@ -74,6 +75,9 @@ namespace pe.com.sil.dal.dao
 
                   if (dr["cantidad_recibida"] != System.DBNull.Value)
                       obj.CantidadRecibida = (Decimal)dr["cantidad_recibida"];
+
+                  if (dr["DESC_ALTERNATIVA"] != System.DBNull.Value)
+                      obj.DescAlternativo = (string)dr["DESC_ALTERNATIVA"];
 
 				  Lista.Add(obj);
               }
@@ -137,6 +141,12 @@ namespace pe.com.sil.dal.dao
 
                   if (dr["cantidad_recibida"] != System.DBNull.Value)
                       obj.CantidadRecibida = (Decimal)dr["cantidad_recibida"];
+
+                  if (dr["MODELO"] != System.DBNull.Value)
+                      obj.Modelo = (string)dr["MODELO"];
+
+                  if (dr["MARCA"] != System.DBNull.Value)
+                      obj.Marca = (string)dr["MARCA"];
 
                   Lista.Add(obj);
               }
@@ -324,6 +334,16 @@ namespace pe.com.sil.dal.dao
           db.AddInParameter(dbCommand, "@id_orden_compra", DbType.Int32, IdOrdenCompra);
           db.AddInParameter(dbCommand, "@id_orden_compra_linea", DbType.Int32, IdOrdenCompraLinea);
           db.ExecuteNonQuery(dbCommand);
+      }
+
+      public int EditarPU(int nro_ordencompralinea, decimal preciounitario)
+      {
+          Database db = DatabaseFactory.CreateDatabase("ApplicationConnectionString");
+          DbCommand dbCommand = db.GetStoredProcCommand(C_USP_UPD_ORDENCOMPRA_PU);
+          db.AddInParameter(dbCommand, "@id_ordencompra_linea", DbType.Int32, nro_ordencompralinea);
+          db.AddInParameter(dbCommand, "@preciouni", DbType.Decimal, preciounitario);
+          int resultado=db.ExecuteNonQuery(dbCommand);
+          return resultado;
       }
   }
 }

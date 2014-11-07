@@ -263,6 +263,9 @@ namespace pe.com.seg.dal.dao
                     if (dr["usuario_modificacion"] != System.DBNull.Value)
                         obj.UsuarioModificacion = (string)dr["usuario_modificacion"];
 
+                    if (dr["PERF_ANULACION"] != System.DBNull.Value)
+                        obj.AnulaDescarta = (string)dr["PERF_ANULACION"];
+
                 }
             }
             return obj;

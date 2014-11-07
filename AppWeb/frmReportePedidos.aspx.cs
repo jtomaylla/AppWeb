@@ -18,7 +18,6 @@ namespace AppWeb
 
         SedeDAO objSedeDAO = new SedeDAO();
         ProyectoDAO objProyectoDAO = new ProyectoDAO();
-        EstadoPedidoDAO objEstadoPedidoDAO = new EstadoPedidoDAO();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -35,7 +34,6 @@ namespace AppWeb
 
             List<SedeDTO> ListaSede;
             List<ProyectoDTO> ListaProyecto;
-            List<EstadoPedidoDTO> ListaEstadoPedido;
 
             try
             {
@@ -64,20 +62,6 @@ namespace AppWeb
             {
                 throw (err);
             }
-
-            try
-            {
-                ListaEstadoPedido = objEstadoPedidoDAO.ListarPorTipo();
-                this.ddlEstadoPedido.DataSource = ListaEstadoPedido;
-                this.ddlEstadoPedido.DataTextField = "NombreEstado";
-                this.ddlEstadoPedido.DataValueField = "Estado";
-                this.ddlEstadoPedido.DataBind();
-                this.ddlEstadoPedido.Items.Insert(0, new ListItem("- Seleccione -", ""));
-            }
-            catch (Exception err)
-            {
-                throw (err);
-            }
             
         }
 
@@ -88,13 +72,11 @@ namespace AppWeb
             ParametroDTO objParametroDTO = objParametroDAO.ListarPorClave(1);
             dsReportes dsReporte = new dsReportes();
             
-            List<PedidoDTO> Lista = objPedidoDAO.ListarReportePorEstado(AppUtilidad.stringToDateTime(this.txtFechaInicial.Text, "DD/MM/YYYY"),
+            List<PedidoDTO> Lista = objPedidoDAO.ListarReporte(AppUtilidad.stringToDateTime(this.txtFechaInicial.Text, "DD/MM/YYYY"),
                                                    AppUtilidad.stringToDateTime(this.txtFechaFinal.Text, "DD/MM/YYYY"),
                                                    Convert.ToInt32(this.ddlSede.SelectedValue),
-                                                   Convert.ToInt32(this.ddlProyecto.SelectedValue),
-                                                   this.ddlEstadoPedido.SelectedValue);
+                                                   Convert.ToInt32(this.ddlProyecto.SelectedValue));
 
-            
             this.lblMensaje.Text = "";
 
             if (Lista.Count > 0)
@@ -140,13 +122,7 @@ namespace AppWeb
             }
             else
             {
-                //this.lblMensaje.Text = "Noy registros con los parametros indicados";
-                //this.lblMensaje.Text = AppUtilidad.stringToDateTime(this.txtFechaInicial.Text, "DD/MM/YYYY").ToString() + "<br>" +
-                //                        AppUtilidad.stringToDateTime(this.txtFechaFinal.Text, "DD/MM/YYYY").ToString() + "<br>" +
-                //                        this.ddlSede.SelectedValue + "<br>" +
-                //                        this.ddlProyecto.SelectedValue + "<br>" +
-                //                        this.ddlEstadoPedido.SelectedValue;
-                this.lblMensaje.Text = "Lista.Count.ToString():" + Lista.Count.ToString();
+                this.lblMensaje.Text = "Noy registros con los parametros indicados";
             }
 
         }

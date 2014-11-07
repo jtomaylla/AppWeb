@@ -42,7 +42,9 @@ namespace pe.com.sil.dal.dto
       private int _IdUsuarioCreacion;
       private DateTime _FechaModificacion;
       private int _IdUsuarioModificacion;
-
+      private string _MotivoAnula;
+      private DateTime _FechaAnulacion;
+      private string _IdUsuarioAnula;
       
 
       //Extendido
@@ -60,7 +62,9 @@ namespace pe.com.sil.dal.dto
       private Decimal _recepcionadoitems;
       private Decimal _faltante;
 
+      private Decimal _redondeo;
 
+      
 
 
       
@@ -87,6 +91,24 @@ namespace pe.com.sil.dal.dto
       }
 
       //Get y Set
+      public string IdUsuarioAnulacion
+      {
+          get { return _IdUsuarioAnula; }
+          set { _IdUsuarioAnula = value; }
+      }
+
+      public DateTime FechaAnula
+      {
+          get { return _FechaAnulacion; }
+          set { _FechaAnulacion = value; }
+      }
+
+      public string MotivoAnula
+      {
+          get { return _MotivoAnula; }
+          set { _MotivoAnula = value; }
+      }
+
       public int IdOrdenCompra
       {
           get { return _IdOrdenCompra; }
@@ -304,6 +326,12 @@ namespace pe.com.sil.dal.dto
               else
                   return false;
           }
+      }
+
+      public Decimal Redondeo
+      {
+          get { return _redondeo; }
+          set { _redondeo = value; }
       }
       
   }

@@ -29,6 +29,8 @@ namespace pe.com.sil.dal.dto
 
       private int _DiasEntrega;
 
+      private string _DescAlternativa;
+
       //Extendido
       private string _NombreCortoUnidadMedida;
       private string _CodigoArticulo;
@@ -58,6 +60,12 @@ namespace pe.com.sil.dal.dto
       }
 
       //Get y Set
+      public string DescAlternativa
+      {
+          get { return _DescAlternativa;}
+          set { _DescAlternativa = value; }
+      }
+
       public int IdCotizacion
       {
           get { return _IdCotizacion; }

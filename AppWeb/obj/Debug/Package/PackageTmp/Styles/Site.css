@@ -234,8 +234,7 @@ input.passwordEntry
 
 div.accountInfo
 {
-    width: 357px;
-    height: 206px;
+    width: 500px;
 }
 
 /* MISC  
@@ -400,8 +399,7 @@ div.accountInfo
 	background-color:#84b2de;
 	background-image:url('/Images/headingBarBg.gif');
     color: #000000;
-    padding-left:8px;
-    width: 350px;
+    padding-left:8px;    	
 }
 
 .cssMensaje

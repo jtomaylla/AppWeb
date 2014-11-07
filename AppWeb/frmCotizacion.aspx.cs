@@ -42,7 +42,7 @@ namespace AppWeb
         protected void InicializaPagina()
         {
             this.lblMensaje.Text = "";
-
+            this.txtflagprecio.Text = "0";
             //this.btnGenerarOrdenCompra.Enabled = false;
 
             try
@@ -88,6 +88,63 @@ namespace AppWeb
 
                         //Lista
                         List<CotizacionLineaDTO> Lista = objCotizacionLineaDAO.ListarPorCotizacion(IdCotizacion);
+
+                        List<ProveedorDTO> listaproveedores=new List<ProveedorDTO>();
+
+                        foreach (CotizacionLineaDTO lineacoti in Lista)
+                        {
+                            if (lineacoti.IdProveedorSeleccionado != 0)
+                            {
+                                ProveedorDTO proveedor = new ProveedorDTO();
+                                proveedor.IdProveedor = lineacoti.IdProveedorSeleccionado;
+                                proveedor.RazonSocial = lineacoti.RazonSocial;
+                                listaproveedores.Add(proveedor);
+                            }
+                            
+                        }
+
+
+                        if (listaproveedores.Count > 0)
+                        {
+                            ddlprov_en_linea.DataSource = listaproveedores.Distinct().ToList();
+                            ddlprov_en_linea.DataTextField = "RazonSocial";
+                            ddlprov_en_linea.DataValueField = "IdProveedor";
+                            ddlprov_en_linea.DataBind();
+                        }
+                        
+                        ddlprov_en_linea.Items.Insert(0, "Todos");
+
+                        decimal acumulado = 0;
+                        decimal acum_redondeo = 0;
+                        foreach (CotizacionLineaDTO objlista in Lista)
+                        {
+
+                            if (objlista.CodigoArticulo != "RND001")
+                            {
+                                acumulado = acumulado + objlista.Importe;
+                            }
+
+                            if (objlista.CodigoArticulo == "RND001")
+                            {
+                                acum_redondeo = acum_redondeo + objlista.Importe;
+                            }
+                            
+                        }
+
+                        lblacumulado.Text = Decimal.Round(acumulado,2).ToString();
+
+                        IgvDAO objIGVDAO = new IgvDAO();
+                        IgvDTO objIGVDTO = objIGVDAO.ListarIGVVigente(DateTime.Now);
+
+                        Decimal IGVsubtotal = (objIGVDTO.Igv * acumulado)/100;
+
+                        lbligv.Text = Decimal.Round(IGVsubtotal, 2).ToString();
+
+                        lblredondeo.Text = Decimal.Round(acum_redondeo, 2).ToString();
+
+                        lbltotal_con_igv.Text = (Decimal.Round(acumulado, 2) + Decimal.Round(IGVsubtotal, 2) + Decimal.Round(acum_redondeo, 2)).ToString();
+                        lbltotal_sin_igv.Text = (Decimal.Round(acumulado, 2)+ Decimal.Round(acum_redondeo, 2)).ToString();
+
                         this.gvLineas.DataSource = Lista;
                         this.gvLineas.DataBind();
 
@@ -140,6 +197,16 @@ namespace AppWeb
                 CotizacionLineaDTO objCotizacionLineaDTO = objCotizacionLineaDAO.ListarPorClave(IdCotizacionLinea);
 
                 this.lblLinea.Text = "Linea " + objCotizacionLineaDTO.NumeroLinea.ToString();
+
+                if (objCotizacionLineaDTO.CodigoArticulo == "RND001")
+                {
+                    txtflagprecio.Text = "1";
+                    txtDiasEntrega.Text = "0";
+                }
+                else
+                {
+                    txtflagprecio.Text = "0";
+                }
 
                 this.ddlProveedor.DataSource = Lista;
                 this.ddlProveedor.DataTextField = "RazonSocial";
@@ -221,6 +288,8 @@ namespace AppWeb
                 objCotizacionLineaProveedorDTO.FechaCreacion = DateTime.Now;
                 objCotizacionLineaProveedorDTO.DiasEntrega = Convert.ToInt32(this.txtDiasEntrega.Text);
 
+                objCotizacionLineaProveedorDTO.DescAlternativo = txtarticuloprov.Text;
+
                 objCotizacionLineaProveedorDAO.Agregar(objCotizacionLineaProveedorDTO);
            
                 //Listar Proveedores
@@ -230,6 +299,7 @@ namespace AppWeb
 
                 this.txtDiasEntrega.Text = "";
                 this.txtPrecio.Text = "";
+                txtarticuloprov.Text = "";
 
             }
             catch (Exception ex)
@@ -294,12 +364,87 @@ namespace AppWeb
                 objCotizacionLinea.Importe = obj.Importe;
                 objCotizacionLinea.IdProveedorSeleccionado = obj.IdProveedor;
                 objCotizacionLinea.DiasEntrega = obj.DiasEntrega;
+                objCotizacionLinea.DescAlternativa = obj.DescAlternativo;
+                
 
                 objCotizacionLineaDAO.Actualizar(objCotizacionLinea);
 
 
                 //Lista
                 List<CotizacionLineaDTO> Lista2 = objCotizacionLineaDAO.ListarPorCotizacion(Convert.ToInt32(this.txtIdCotizacion.Text));
+
+
+                List<ProveedorDTO> listaproveedores = new List<ProveedorDTO>();
+
+                foreach (CotizacionLineaDTO lineacoti in Lista2)
+                {
+                    if (lineacoti.IdProveedorSeleccionado != 0)
+                    {
+                        ProveedorDTO proveedor = new ProveedorDTO();
+                        proveedor.IdProveedor = lineacoti.IdProveedorSeleccionado;
+                        proveedor.RazonSocial = lineacoti.RazonSocial;
+                        listaproveedores.Add(proveedor);
+                    }
+
+                }
+
+
+                if (listaproveedores.Count > 0)
+                {
+                    ddlprov_en_linea.DataSource = listaproveedores.Distinct().ToList();
+                    ddlprov_en_linea.DataTextField = "RazonSocial";
+                    ddlprov_en_linea.DataValueField = "IdProveedor";
+                    ddlprov_en_linea.DataBind();
+                }
+
+                ddlprov_en_linea.Items.Insert(0, "Todos");
+
+                decimal acumulado = 0;
+                decimal acum_redondeo = 0;
+                foreach (CotizacionLineaDTO objlista in Lista2)
+                {
+
+                    if (objlista.CodigoArticulo != "RND001")
+                    {
+                        acumulado = acumulado + objlista.Importe;
+                    }
+
+                    if (objlista.CodigoArticulo == "RND001")
+                    {
+                        acum_redondeo = acum_redondeo + objlista.Importe;
+                    }
+
+                }
+
+                lblacumulado.Text = Decimal.Round(acumulado, 2).ToString();
+
+                IgvDAO objIGVDAO = new IgvDAO();
+                IgvDTO objIGVDTO = objIGVDAO.ListarIGVVigente(DateTime.Now);
+
+                Decimal IGVsubtotal = (objIGVDTO.Igv * acumulado) / 100;
+
+                lbligv.Text = Decimal.Round(IGVsubtotal, 2).ToString();
+
+                lblredondeo.Text = Decimal.Round(acum_redondeo, 2).ToString();
+
+                lbltotal_con_igv.Text = (Decimal.Round(acumulado, 2) + Decimal.Round(IGVsubtotal, 2) + Decimal.Round(acum_redondeo, 2)).ToString();
+                lbltotal_sin_igv.Text = (Decimal.Round(acumulado, 2) + Decimal.Round(acum_redondeo, 2)).ToString();
+
+
+                /*
+                decimal acumulado = 0;
+                foreach (CotizacionLineaDTO objlista in Lista2)
+                {
+                    if (objlista.CodigoArticulo != "RND001")
+                    {
+                        acumulado = acumulado + objlista.Importe;
+                    }
+                }
+
+                lblacumulado.Text = acumulado.ToString();
+                */
+
+
                 this.gvLineas.DataSource = Lista2;
                 this.gvLineas.DataBind();
             
@@ -398,6 +543,8 @@ namespace AppWeb
                     this.panSeleccionProveedor.Visible = false;
                     this.btnSeleccionarProveedor.Visible = false;
 
+                    this.btnredondeo.Visible = false;
+                    this.btnquitarredondeo.Visible = false;
                 }
                 else 
                 {
@@ -407,6 +554,9 @@ namespace AppWeb
                     this.btnSeleccionarProveedor.Visible = false;
                     this.btnAgregarProceedor.Visible = false;
                     this.btnGenerarOrdenCompra.Visible = false;
+
+                    this.btnredondeo.Visible = false;
+                    this.btnquitarredondeo.Visible = false;
             
                 }
             }
@@ -414,6 +564,191 @@ namespace AppWeb
             {
                 this.lblMensaje.Text = ex.ToString();
             }
+
+        }
+
+        protected void btnredondeo_Click(object sender, EventArgs e)
+        {
+            int IdCotizacion = 0;
+            if (Session["ID_COTIZACION"] == null)
+            {
+                if (this.txtIdCotizacion.Text != "")
+                    IdCotizacion = Convert.ToInt32(txtIdCotizacion.Text);
+
+            }
+            else
+            {
+                IdCotizacion = Convert.ToInt32(Session["ID_COTIZACION"]);
+                txtIdCotizacion.Text = Convert.ToString(Session["ID_COTIZACION"]);
+            }
+            UsuarioDTO objUsuarioDTO = objUsuarioDAO.ListarPorLogin(HttpContext.Current.User.Identity.Name);
+            objCotizacionDAO.AgregarRedondeo(IdCotizacion, objUsuarioDTO.IdUsuario);
+
+            List<CotizacionLineaDTO> Lista = objCotizacionLineaDAO.ListarPorCotizacion(IdCotizacion);
+            gvLineas.DataSource = Lista;
+            gvLineas.DataBind();
+
+        }
+
+        protected void btnquitarredondeo_Click(object sender, EventArgs e)
+        {
+            int IdCotizacion = 0;
+            if (Session["ID_COTIZACION"] == null)
+            {
+                if (this.txtIdCotizacion.Text != "")
+                    IdCotizacion = Convert.ToInt32(txtIdCotizacion.Text);
+
+            }
+            else
+            {
+                IdCotizacion = Convert.ToInt32(Session["ID_COTIZACION"]);
+                txtIdCotizacion.Text = Convert.ToString(Session["ID_COTIZACION"]);
+            }
+
+            objCotizacionDAO.EliminarRedondeo(IdCotizacion);
+
+            List<CotizacionLineaDTO> Lista = objCotizacionLineaDAO.ListarPorCotizacion(IdCotizacion);
+
+
+            List<ProveedorDTO> listaproveedores = new List<ProveedorDTO>();
+
+            foreach (CotizacionLineaDTO lineacoti in Lista)
+            {
+                if (lineacoti.IdProveedorSeleccionado != 0)
+                {
+                    ProveedorDTO proveedor = new ProveedorDTO();
+                    proveedor.IdProveedor = lineacoti.IdProveedorSeleccionado;
+                    proveedor.RazonSocial = lineacoti.RazonSocial;
+                    listaproveedores.Add(proveedor);
+                }
+
+            }
+
+
+            if (listaproveedores.Count > 0)
+            {
+                ddlprov_en_linea.DataSource = listaproveedores.Distinct().ToList();
+                ddlprov_en_linea.DataTextField = "RazonSocial";
+                ddlprov_en_linea.DataValueField = "IdProveedor";
+                ddlprov_en_linea.DataBind();
+            }
+
+            ddlprov_en_linea.Items.Insert(0, "Todos");
+
+            decimal acumulado = 0;
+            decimal acum_redondeo = 0;
+            foreach (CotizacionLineaDTO objlista in Lista)
+            {
+
+                if (objlista.CodigoArticulo != "RND001")
+                {
+                    acumulado = acumulado + objlista.Importe;
+                }
+
+                if (objlista.CodigoArticulo == "RND001")
+                {
+                    acum_redondeo = acum_redondeo + objlista.Importe;
+                }
+
+            }
+
+            lblacumulado.Text = Decimal.Round(acumulado, 2).ToString();
+
+            IgvDAO objIGVDAO = new IgvDAO();
+            IgvDTO objIGVDTO = objIGVDAO.ListarIGVVigente(DateTime.Now);
+
+            Decimal IGVsubtotal = (objIGVDTO.Igv * acumulado) / 100;
+
+            lbligv.Text = Decimal.Round(IGVsubtotal, 2).ToString();
+
+            lblredondeo.Text = Decimal.Round(acum_redondeo, 2).ToString();
+
+            lbltotal_con_igv.Text = (Decimal.Round(acumulado, 2) + Decimal.Round(IGVsubtotal, 2) + Decimal.Round(acum_redondeo, 2)).ToString();
+            lbltotal_sin_igv.Text = (Decimal.Round(acumulado, 2) + Decimal.Round(acum_redondeo, 2)).ToString();
+
+
+            /*
+            decimal acumulado = 0;
+            foreach (CotizacionLineaDTO objlista in Lista)
+            {
+                if (objlista.CodigoArticulo != "RND001")
+                {
+                    acumulado = acumulado + objlista.Importe;
+                }
+            }
+
+            lblacumulado.Text = acumulado.ToString();
+            */
+            gvLineas.DataSource = Lista;
+            gvLineas.DataBind();
+        }
+
+        protected void ddlprov_en_linea_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int IdCotizacion = 0;
+            int IdProveedor = 0;
+            IdCotizacion = Convert.ToInt32(this.txtIdCotizacion.Text);
+            IdProveedor = Convert.ToInt32(this.ddlprov_en_linea.SelectedValue);
+            List<CotizacionLineaDTO> Lista = objCotizacionLineaDAO.ListarPorCotizacion(IdCotizacion, IdProveedor);
+
+
+            /*
+            List<ProveedorDTO> listaproveedores = new List<ProveedorDTO>();
+
+            foreach (CotizacionLineaDTO lineacoti in Lista)
+            {
+                if (lineacoti.IdProveedorSeleccionado != 0)
+                {
+                    ProveedorDTO proveedor = new ProveedorDTO();
+                    proveedor.IdProveedor = lineacoti.IdProveedorSeleccionado;
+                    proveedor.RazonSocial = lineacoti.RazonSocial;
+                    listaproveedores.Add(proveedor);
+                }
+
+            }
+
+
+            if (listaproveedores.Count > 0)
+            {
+                ddlprov_en_linea.DataSource = listaproveedores.Distinct().ToList();
+                ddlprov_en_linea.DataTextField = "RazonSocial";
+                ddlprov_en_linea.DataValueField = "IdProveedor";
+                ddlprov_en_linea.DataBind();
+            }
+            
+            ddlprov_en_linea.Items.Insert(0, "Todos");
+            */
+            decimal acumulado = 0;
+            decimal acum_redondeo = 0;
+            foreach (CotizacionLineaDTO objlista in Lista)
+            {
+
+                if (objlista.CodigoArticulo != "RND001")
+                {
+                    acumulado = acumulado + objlista.Importe;
+                }
+
+                if (objlista.CodigoArticulo == "RND001")
+                {
+                    acum_redondeo = acum_redondeo + objlista.Importe;
+                }
+
+            }
+
+            lblacumulado.Text = Decimal.Round(acumulado, 2).ToString();
+
+            IgvDAO objIGVDAO = new IgvDAO();
+            IgvDTO objIGVDTO = objIGVDAO.ListarIGVVigente(DateTime.Now);
+
+            Decimal IGVsubtotal = (objIGVDTO.Igv * acumulado) / 100;
+
+            lbligv.Text = Decimal.Round(IGVsubtotal, 2).ToString();
+
+            lblredondeo.Text = Decimal.Round(acum_redondeo, 2).ToString();
+
+            lbltotal_con_igv.Text = (Decimal.Round(acumulado, 2) + Decimal.Round(IGVsubtotal, 2) + Decimal.Round(acum_redondeo, 2)).ToString();
+            lbltotal_sin_igv.Text = (Decimal.Round(acumulado, 2) + Decimal.Round(acum_redondeo, 2)).ToString();
+
 
         }
         

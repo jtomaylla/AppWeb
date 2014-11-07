@@ -70,24 +70,75 @@ C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\AppWeb.dll
 C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\AppWeb.pdb
 C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\AppDAL.dll
 C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\AppDAL.pdb
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\obj\Release\AppWeb.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\obj\Release\AppWeb.pdb
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\obj\Release\AppWeb.csprojResolveAssemblyReference.cache
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\AjaxControlToolkit.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\AjaxMin.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\HtmlAgilityPack.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.Data.Edm.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.Data.OData.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\System.Spatial.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\HtmlAgilityPack.pdb
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\HtmlAgilityPack.xml
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.Data.Edm.xml
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.Data.OData.xml
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\System.Spatial.xml
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\ar\AjaxControlToolkit.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\cs\AjaxControlToolkit.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\de\AjaxControlToolkit.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\es\AjaxControlToolkit.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\fr\AjaxControlToolkit.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\he\AjaxControlToolkit.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\hi\AjaxControlToolkit.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\it\AjaxControlToolkit.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\ja\AjaxControlToolkit.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\ko\AjaxControlToolkit.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\nl\AjaxControlToolkit.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\pl\AjaxControlToolkit.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\pt\AjaxControlToolkit.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\ru\AjaxControlToolkit.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\tr-TR\AjaxControlToolkit.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\zh-CHS\AjaxControlToolkit.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\de\System.Spatial.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\es\System.Spatial.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\fr\System.Spatial.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\it\System.Spatial.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\ja\System.Spatial.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\ko\System.Spatial.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\ru\System.Spatial.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
 C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.Practices.ServiceLocation.dll
 C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.Practices.Unity.dll
 C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.Practices.Unity.Interception.dll
-C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\AppDAL.pdb
-C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.Practices.EnterpriseLibrary.Common.pdb
-C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
 C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.Practices.Unity.pdb
 C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\bin\Microsoft.Practices.Unity.Interception.pdb
-C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\obj\Release\ResolveAssemblyReference.cache
-C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\obj\Release\AppWeb.dll
-C:\Users\BOCANEGRA\Documents\Proyectos\AppWeb\AppWeb\obj\Release\AppWeb.pdb
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\obj\Release\AppWeb.csprojResolveAssemblyReference.cache
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\obj\Release\AppWeb.dll
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\obj\Release\AppWeb.pdb
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\AppWeb.dll
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\AppWeb.pdb
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\AppDAL.dll
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\AppDAL.pdb

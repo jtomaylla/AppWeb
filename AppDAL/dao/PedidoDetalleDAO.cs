@@ -123,6 +123,8 @@ namespace pe.com.sil.dal.dao
                   if (dr["orden_compra"] != System.DBNull.Value) obj.OrdenCompra = (string)dr["orden_compra"];
                   if (dr["estado_pedido"] != System.DBNull.Value) obj.EstadoPedido = (string)dr["estado_pedido"];
 
+                  if (dr["MARCA"] != System.DBNull.Value) obj.Marca = (string)dr["MARCA"];
+                  if (dr["MODELO"] != System.DBNull.Value) obj.Modelo = (string)dr["MODELO"];
 
                   Lista.Add(obj);
               }

@@ -32,6 +32,7 @@ namespace AppWeb
         //agregado x jtomaylla
         SedeDAO objSedeDAO = new SedeDAO();
         //
+
         Decimal dSubTotal = 0;
         Decimal dIGV = 0;
         Decimal dTotal = 0;
@@ -69,13 +70,14 @@ namespace AppWeb
                 CotizacionDTO objCotizacionDTO = objCotizacionDAO.ListarPorClave(objOrdenCompraDTO.IdCotizacion); //editado por requerimiento del cliente
                 PedidoDTO objPedidoDTO = objPedidoDAO.ListarPorClave(objCotizacionDTO.IdPedido);
                 //agregado x jtomaylla
-                //UsuarioDTO objUsuarioDTO = objUsuarioDAO.ListarPorClave(objPedidoDTO.IdSolicitante);
+                UsuarioDTO objUsuarioSolDTO = objUsuarioDAO.ListarPorClave(objPedidoDTO.IdSolicitante);
                 UsuarioDTO objUsuarioDTO = objUsuarioDAO.ListarPorClave(objPedidoDTO.IdResponsableProyecto);
                 //
                 List<PedidoPresupuestoDTO> ListaPedidoPresupuestoDTO = objPedidoPresupuestoDAO.Listar(objPedidoDTO.IdPedido);
                 //agregado x jtomaylla
                 SedeDTO objSedeDTO = objSedeDAO.ListarPorClave(objOrdenCompraDTO.IdSede);
                 //
+      
                 dsReportes dsReporte = new dsReportes();
 
                 dsReportes.ParametroRow drParametroRow = dsReporte.Parametro.NewParametroRow();
@@ -133,6 +135,7 @@ namespace AppWeb
                 drOrdenCompraRow.DireccionEntrega = objSedeDTO.Direccion;
                 drOrdenCompraRow.ComentarioProveedor = objOrdenCompraDTO.ComentariosEnvioProveedor;
                 //
+
                 drOrdenCompraRow.Proyecto = objOrdenCompraDTO.NombreProyecto;
 
                 string codigos = "";
@@ -143,20 +146,32 @@ namespace AppWeb
                         codigos = codigos + " " + item.CodigoPresupuesto;
                     }
                 }
+
                 // Agregado x jtomaylla
-                //drOrdenCompraRow.Descripcion = "Solicitado por " + objUsuarioDTO.NombreUsuario + " - Código: " + codigos;
-                drOrdenCompraRow.Descripcion = objUsuarioDTO.LoginUsuario + " - Código: " + codigos;
+               
+                if (objUsuarioDTO != null)
+                {
+                    drOrdenCompraRow.Descripcion = objUsuarioDTO.LoginUsuario + " - Código: " + codigos;
+                }
+                else
+                {
+                    drOrdenCompraRow.Descripcion = "Solicitado por " + objUsuarioSolDTO.NombreUsuario + " - Código: " + codigos;
+                }
                 //
+
+
+                drOrdenCompraRow.Redondeo = objOrdenCompraDTO.Redondeo;
+
                 if (objOrdenCompraDTO.FlagIGV == "1")
                 {
-                    drOrdenCompraRow.IGV = drOrdenCompraRow.Subtotal * (objIGVDTO.Igv / 100);
-                    drOrdenCompraRow.Total = drOrdenCompraRow.Subtotal + drOrdenCompraRow.IGV;
+                    drOrdenCompraRow.IGV = decimal.Round(drOrdenCompraRow.Subtotal * (objIGVDTO.Igv / 100),2);
+                    drOrdenCompraRow.Total =decimal.Round(drOrdenCompraRow.Subtotal + drOrdenCompraRow.IGV + drOrdenCompraRow.Redondeo,2);
                     drOrdenCompraRow.PorcentajeIGV = objIGVDTO.Igv.ToString() + "%";
                 }
                 else
                 {
                     drOrdenCompraRow.IGV = 0;
-                    drOrdenCompraRow.Total = drOrdenCompraRow.Subtotal + drOrdenCompraRow.IGV;
+                    drOrdenCompraRow.Total = decimal.Round( drOrdenCompraRow.Subtotal + drOrdenCompraRow.IGV + drOrdenCompraRow.Redondeo,2);
                     drOrdenCompraRow.PorcentajeIGV = "0%";
                 }
 
@@ -174,7 +189,8 @@ namespace AppWeb
                                 drOrdenCompraRow.PorcentajeIGV = objIGVDTO.Igv.ToString() + "%";
                             }
                 */
-                drOrdenCompraRow.TotalLetras = "SON: " + AppUtilidad.numberToText(drOrdenCompraRow.Total.ToString()) + " " + objMonedaDTO.NombreMoneda;
+                //drOrdenCompraRow.TotalLetras = "SON: " + AppUtilidad.numberToText(drOrdenCompraRow.Total.ToString()) + " " + objMonedaDTO.NombreMoneda;
+                drOrdenCompraRow.TotalLetras = "SON: " + AppUtilidad.numberToText(decimal.Round(drOrdenCompraRow.Total,2).ToString()) + " " + objMonedaDTO.NombreMoneda;
 
                 dsReporte.OrdenCompra.AddOrdenCompraRow(drOrdenCompraRow);
 
@@ -195,6 +211,15 @@ namespace AppWeb
                     drOrdenCompraLineasRow.DescripcionLinea = linea.DescripcionLinea;
                     drOrdenCompraLineasRow.PrecioUnitario = linea.Precio;
                     drOrdenCompraLineasRow.Importe = linea.Importe;
+                    if (string.IsNullOrEmpty(linea.DescAlternativo))
+                    {
+                        drOrdenCompraLineasRow.DescAlternativa = linea.DescripcionLinea;
+                    }
+                    else
+                    {
+                        drOrdenCompraLineasRow.DescAlternativa = linea.DescAlternativo;
+                    }
+                    
                     dsReporte.OrdenCompraLineas.AddOrdenCompraLineasRow(drOrdenCompraLineasRow);
                 }
 

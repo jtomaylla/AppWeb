@@ -92,14 +92,14 @@
 <asp:Panel ID="pnlPrincipal" runat="server">
     <div class="cssTablaCabeceraRegistro">Transacciones</div>
     <div class="cssTablaRegistro">
-        <table width="100%">
+        <table >
         <tr>
             <td>
             Proyecto
             </td>
             <td>:</td>
             <td>
-                <asp:DropDownList ID="ddlProyecto" Width="650px" runat="server">
+                <asp:DropDownList ID="ddlProyecto" runat="server">
                 </asp:DropDownList>
             </td>
         </tr>
@@ -114,7 +114,7 @@
         <tr>
             <td>Descripción</td>
             <td>:</td>
-            <td><asp:TextBox ID="txtDescripcion" runat="server" Width="650px" Enabled="False"></asp:TextBox></td>
+            <td><asp:TextBox ID="txtDescripcion" runat="server" Width="800px" Enabled="False"></asp:TextBox></td>
         </tr>
         <tr>
             <td>Unidad</td>

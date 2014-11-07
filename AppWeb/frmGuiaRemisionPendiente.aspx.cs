@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -173,7 +174,7 @@ namespace AppWeb
                     drFilaGuiaRemision.destinatario = objGuiaRemisionDTO.RazonSocialDestinatario;
                     drFilaGuiaRemision.ruc_destinatario = objGuiaRemisionDTO.RucDestinatario;
                     drFilaGuiaRemision.transportista = objGuiaRemisionDTO.RazonSocialTransportista;
-                    drFilaGuiaRemision.ruc_transportista = objGuiaRemisionDTO.RazonSocialTransportista;
+                    drFilaGuiaRemision.ruc_transportista = objGuiaRemisionDTO.RucTransportista;
                     drFilaGuiaRemision.marca = objGuiaRemisionDTO.Marca;
                     drFilaGuiaRemision.placa = objGuiaRemisionDTO.Placa;
                     drFilaGuiaRemision.certificado = objGuiaRemisionDTO.Certificado;
@@ -207,7 +208,8 @@ namespace AppWeb
                     myReportDocument.Load(strRuta);
                     myReportDocument.SetDataSource(dsReporte);
                     Session.Add("ReporteCrystal", myReportDocument);
-                    Session.Add("FormatoReporte", "PDF");
+                    //Session.Add("FormatoReporte", "PDF");
+                    Session["impresion"] = "DOC";
 
                     string strRutaWeb = Request.ApplicationPath;
 
@@ -257,7 +259,7 @@ namespace AppWeb
                     drFilaGuiaRemision.destinatario = objGuiaRemisionDTO.RazonSocialDestinatario;
                     drFilaGuiaRemision.ruc_destinatario = objGuiaRemisionDTO.RucDestinatario;
                     drFilaGuiaRemision.transportista = objGuiaRemisionDTO.RazonSocialTransportista;
-                    drFilaGuiaRemision.ruc_transportista = objGuiaRemisionDTO.RazonSocialTransportista;
+                    drFilaGuiaRemision.ruc_transportista = objGuiaRemisionDTO.RucTransportista;
                     drFilaGuiaRemision.marca = objGuiaRemisionDTO.Marca;
                     drFilaGuiaRemision.placa = objGuiaRemisionDTO.Placa;
                     drFilaGuiaRemision.certificado = objGuiaRemisionDTO.Certificado;
@@ -291,8 +293,9 @@ namespace AppWeb
                     myReportDocument.Load(strRuta);
                     myReportDocument.SetDataSource(dsReporte);
                     Session.Add("ReporteCrystal", myReportDocument);
-                    Session.Add("FormatoReporte", "PDF");
-
+                    //Session.Add("FormatoReporte", "PDF");
+                    //Session.Add("FormatoReporte", "XLS");
+                    Session["impresion"] = "DOC";
                     string strRutaWeb = Request.ApplicationPath;
 
                     Response.Write("<script language='javascript'>window.open('frmVisorReporte.aspx" + "','ventana','scrollbars=1,resizable=1,width=800,height=600,left=20,top=0');</script>");

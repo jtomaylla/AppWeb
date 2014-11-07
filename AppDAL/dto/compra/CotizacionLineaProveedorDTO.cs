@@ -28,6 +28,8 @@ namespace pe.com.sil.dal.dto
       private string _Ruc;
       private int _DiasEntrega;
 
+      private string _DescAlternativo;
+
       //Constructor
       public CotizacionLineaProveedorDTO() { }
 
@@ -50,6 +52,12 @@ namespace pe.com.sil.dal.dto
       }
 
       //Get y Set
+      public string DescAlternativo
+      {
+          get { return _DescAlternativo; }
+          set { _DescAlternativo = value; }
+      }
+
       public int IdCotizacion
       {
           get { return _IdCotizacion; }
