@@ -260,7 +260,3 @@ C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\zh-Hant\Sy
 C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\obj\Debug\AppWeb.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\obj\Debug\AppWeb.dll
 C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\obj\Debug\AppWeb.pdb
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\Microsoft.Practices.ServiceLocation.dll
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\Microsoft.Practices.Unity.dll
-C:\Users\User\Documents\Visual Studio 2010\Projects\AppWeb\AppWeb\bin\Microsoft.Practices.Unity.Interception.dll

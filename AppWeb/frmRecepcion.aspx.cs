@@ -192,9 +192,9 @@ namespace AppWeb
                     if (txtCantidadRecepcion.Text != "")
                     {
                         decimal cantidad = Convert.ToDecimal(txtCantidadRecepcion.Text);
-                        decimal cantidad_orden_compra = Convert.ToDecimal(row.Cells[5].Text);
+                        decimal cantidad_orden_compra = Convert.ToDecimal(row.Cells[7].Text);
                         decimal cantidad_recibida = 0;
-                        if (row.Cells[8].Text.Trim() == "") { cantidad_recibida = 0; } else { cantidad_recibida = Convert.ToDecimal(row.Cells[8].Text); }
+                        if (row.Cells[10].Text.Trim() == "") { cantidad_recibida = 0; } else { cantidad_recibida = Convert.ToDecimal(row.Cells[10].Text); }
                         
                         decimal cantidad_pendiente = cantidad_orden_compra - cantidad_recibida;
                         if (cantidad > 0)
@@ -257,8 +257,8 @@ namespace AppWeb
                     decimal cantidad = 0;
                     if (txtCantidadRecepcion.Text.Trim() != "") { cantidad = Convert.ToDecimal(txtCantidadRecepcion.Text); }
                     
-                    decimal cantidad_orden_compra = Convert.ToDecimal(row.Cells[5].Text);
-                    decimal cantidad_recibida = Convert.ToDecimal(row.Cells[8].Text);
+                    decimal cantidad_orden_compra = Convert.ToDecimal(row.Cells[7].Text);
+                    decimal cantidad_recibida = Convert.ToDecimal(row.Cells[10].Text);
                     decimal cantidad_pendiente = cantidad_orden_compra - cantidad_recibida;
 
                     OrdenCompraLineaDTO objOrdenCompraLinea = new OrdenCompraLineaDTO();
