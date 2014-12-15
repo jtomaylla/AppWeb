@@ -132,7 +132,13 @@ namespace AppWeb
                     drOrdenCompraRow.FacturarDireccion = objParametroDTO.Direccion;
                 }
                 // agregado x jtomaylla
-                drOrdenCompraRow.DireccionEntrega = objSedeDTO.Direccion;
+                if (objSedeDTO != null)
+                {
+                    drOrdenCompraRow.DireccionEntrega = objSedeDTO.Direccion;
+                }else{
+                    drOrdenCompraRow.DireccionEntrega = "";
+                }
+
                 drOrdenCompraRow.ComentarioProveedor = objOrdenCompraDTO.ComentariosEnvioProveedor;
                 //
 
