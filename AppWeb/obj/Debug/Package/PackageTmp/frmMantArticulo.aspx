@@ -122,6 +122,31 @@
             <td>:</td>
             <td><asp:TextBox ID="txtMarca" runat="server" Width="200px" MaxLength="100"></asp:TextBox></td>
         </tr>
+                <tr>
+            <td>Serie</td>
+            <td>:</td>
+            <td><asp:TextBox ID="txtSerie" runat="server" Width="200px" MaxLength="50"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td>Lote</td>
+            <td>:</td>
+            <td><asp:TextBox ID="txtLote" runat="server" Width="200px" MaxLength="50"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td>Fecha Vencimiento</td>
+            <td>:</td>
+            <td><asp:TextBox ID="txtFechaVencimiento" runat="server" Width="100px" MaxLength="10"></asp:TextBox>
+                    <script language="javascript">
+		<!--
+                        if (!document.layers) {
+                            document.write("<input type=button onclick='popUpCalendar(this, MainContent_txtFechaVencimiento, \"dd/mm/yyyy\")'  name='select1' value='...' style='font-size:11px'>")
+                        }
+		//-->
+		</script>
+
+            
+            </td>
+        </tr>
         <tr>
             <td valign="top">Observaciones</td>
             <td>:</td>

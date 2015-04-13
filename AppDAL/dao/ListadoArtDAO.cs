@@ -12,7 +12,7 @@ namespace pe.com.sil.dal.dao
 {
     public class ListadoArtDAO
     {
-        const string C_GENERAR_LISTADO = "USP_InvTransaccion_ListarTodos";
+        const string C_GENERAR_LISTADO = "USP_InvTransaccion_ListarTodos1";
 
         public DataTable ListarTodos()
         {

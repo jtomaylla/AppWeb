@@ -42,7 +42,7 @@ namespace AppWeb
         {
             CrystalDecisions.CrystalReports.Engine.ReportDocument myReportDocument;
             myReportDocument = new CrystalDecisions.CrystalReports.Engine.ReportDocument();
-            string strRuta = Server.MapPath("ListadoArticulos.rpt");
+            string strRuta = Server.MapPath("ListadoArticulos1.rpt");
             myReportDocument.Load(strRuta);
 
             DataTable dt = objListado.ListarTodos();
@@ -55,7 +55,7 @@ namespace AppWeb
         {
             CrystalDecisions.CrystalReports.Engine.ReportDocument myReportDocument;
             myReportDocument = new CrystalDecisions.CrystalReports.Engine.ReportDocument();
-            string strRuta = Server.MapPath("ListadoArticulos.rpt");
+            string strRuta = Server.MapPath("ListadoArticulos1.rpt");
             myReportDocument.Load(strRuta);
 
             DataTable dt = objListado.ListarTodos();

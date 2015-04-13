@@ -16,14 +16,14 @@ namespace AppWeb {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class ListadoArticulos : ReportClass {
+    public class ListadoArticulos1 : ReportClass {
         
-        public ListadoArticulos() {
+        public ListadoArticulos1() {
         }
         
         public override string ResourceName {
             get {
-                return "ListadoArticulos.rpt";
+                return "ListadoArticulos1.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace AppWeb {
         
         public override string FullResourceName {
             get {
-                return "AppWeb.ListadoArticulos.rpt";
+                return "AppWeb.ListadoArticulos1.rpt";
             }
             set {
                 // Do nothing
@@ -138,9 +138,9 @@ namespace AppWeb {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedListadoArticulos : Component, ICachedReport {
+    public class CachedListadoArticulos1 : Component, ICachedReport {
         
-        public CachedListadoArticulos() {
+        public CachedListadoArticulos1() {
         }
         
         [Browsable(false)]
@@ -177,7 +177,7 @@ namespace AppWeb {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            ListadoArticulos rpt = new ListadoArticulos();
+            ListadoArticulos1 rpt = new ListadoArticulos1();
             rpt.Site = this.Site;
             return rpt;
         }

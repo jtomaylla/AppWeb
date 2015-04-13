@@ -175,13 +175,13 @@ namespace AppWeb
                     this.txtMarca.Text = obj.Marca;
                     this.txtModelo.Text = obj.Modelo;
                     
-                    //this.txtSerie.Text = obj.Serie;
-                    //this.txtLote.Text = obj.Lote;
+                    this.txtSerie.Text = obj.Serie;
+                    this.txtLote.Text = obj.Lote;
 
-                    //if (obj.FechaVencimiento.Year == 1)
-                    //    this.txtFechaVencimiento.Text = "";
-                    //else
-                    //    this.txtFechaVencimiento.Text = obj.FechaVencimiento.ToString("dd/MM/yyyy");
+                    if (obj.FechaVencimiento.Year == 1)
+                        this.txtFechaVencimiento.Text = "";
+                    else
+                        this.txtFechaVencimiento.Text = obj.FechaVencimiento.ToString("dd/MM/yyyy");
 
                     this.txtObservaciones.Text = obj.Observaciones;
                     this.txtObservacionesAlmacenamiento.Text = obj.ObservacionesAlmacenamiento;
@@ -293,11 +293,11 @@ namespace AppWeb
             obj.Marca = this.txtMarca.Text;
             obj.Modelo = this.txtModelo.Text;
 
-            //obj.Serie = this.txtSerie.Text;
-            //obj.Lote = this.txtLote.Text;
+            obj.Serie = this.txtSerie.Text;
+            obj.Lote = this.txtLote.Text;
 
-            //if (this.txtFechaVencimiento.Text!="")
-            //    obj.FechaVencimiento = AppUtilidad.stringToDateTime(this.txtFechaVencimiento.Text, "DD/MM/YYYY");
+            if (this.txtFechaVencimiento.Text != "")
+                obj.FechaVencimiento = AppUtilidad.stringToDateTime(this.txtFechaVencimiento.Text, "DD/MM/YYYY");
 
             obj.Observaciones = this.txtObservaciones.Text;
             obj.ObservacionesAlmacenamiento = this.txtObservacionesAlmacenamiento.Text;
@@ -346,11 +346,11 @@ namespace AppWeb
             obj.Modelo = this.txtModelo.Text;
             obj.Marca = this.txtMarca.Text;
 
-            //obj.Serie = this.txtSerie.Text;
-            //obj.Lote = this.txtLote.Text;
+            obj.Serie = this.txtSerie.Text;
+            obj.Lote = this.txtLote.Text;
 
-            //if (this.txtFechaVencimiento.Text.Length>0)
-            //    obj.FechaVencimiento = AppUtilidad.stringToDateTime(this.txtFechaVencimiento.Text, "DD/MM/YYYY");
+            if (this.txtFechaVencimiento.Text.Length > 0)
+                obj.FechaVencimiento = AppUtilidad.stringToDateTime(this.txtFechaVencimiento.Text, "DD/MM/YYYY");
 
             obj.Observaciones = this.txtObservaciones.Text;
             obj.ObservacionesAlmacenamiento = this.txtObservacionesAlmacenamiento.Text;
